@@ -1,0 +1,11 @@
+# cargo files
+target
+
+# javascript dependencies
+node_modules
+
+# environment variables
+.env*
+
+# macOS system files
+.DS_Store
