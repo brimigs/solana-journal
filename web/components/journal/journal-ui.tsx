@@ -8,14 +8,21 @@ import {
   useJournalProgram,
   useJournalProgramAccount,
 } from './journal-data-access';
+import { useWallet } from '@solana/wallet-adapter-react';
 
 export function JournalCreate() {
   const { createEntry } = useJournalProgram();
+  const { publicKey } = useWallet();
+
+
+  if (!publicKey){
+    return <p>Connect your wallet</p>
+  }
 
   return (
     <button
       className="btn btn-xs lg:btn-md btn-primary"
-      onClick={() => createEntry.mutateAsync(Keypair.generate())}
+      onClick={() => createEntry.mutateAsync(publicKey)}
       disabled={createEntry.isPending}
     >
       Create Journal Entry {createEntry.isPending && '...'}
@@ -32,7 +39,7 @@ export function JournalList() {
   }
   if (!getProgramAccount.data?.value) {
     return (
-      <div className="alert alert-info flex justify-center">
+      <div className="flex justify-center alert alert-info">
         <span>
           Program account not found. Make sure you have deployed the program and
           are on the correct cluster.
@@ -45,7 +52,7 @@ export function JournalList() {
       {accounts.isLoading ? (
         <span className="loading loading-spinner loading-lg"></span>
       ) : accounts.data?.length ? (
-        <div className="grid md:grid-cols-2 gap-4">
+        <div className="grid gap-4 md:grid-cols-2">
           {accounts.data?.map((account) => (
             <JournalCard
               key={account.publicKey.toString()}
@@ -73,16 +80,17 @@ function JournalCard({ account }: { account: PublicKey }) {
   return accountQuery.isLoading ? (
     <span className="loading loading-spinner loading-lg"></span>
   ) : (
-    <div className="card card-bordered border-base-300 border-4 text-neutral-content">
-      <div className="card-body items-center text-center">
+    <div className="border-4 card card-bordered border-base-300 text-neutral-content">
+      <div className="items-center text-center card-body">
         <div className="space-y-6">
           <h2
-            className="card-title justify-center text-3xl cursor-pointer"
+            className="justify-center text-3xl cursor-pointer card-title"
             onClick={() => accountQuery.refetch()}
           >
-            {title}
+            title here
+            {/* {title} */}
           </h2>
-          <div className="card-actions justify-around">
+          <div className="justify-around card-actions">
             <button
               className="btn btn-xs lg:btn-md btn-outline"
               onClick={() => updateEntry.mutateAsync()}
@@ -111,7 +119,7 @@ function JournalCard({ account }: { account: PublicKey }) {
               Decrement
             </button> */}
           </div>
-          <div className="text-center space-y-4">
+          <div className="space-y-4 text-center">
             <p>
               <ExplorerLink
                 path={`account/${account}`}

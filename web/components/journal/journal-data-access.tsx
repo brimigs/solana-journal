@@ -1,22 +1,28 @@
 'use client';
 
-import { JournalIDL } from '@journal/anchor';
+import { JournalIDL, getJournalProgramId } from '@journal/anchor';
 import { Program } from '@coral-xyz/anchor';
 import { useConnection } from '@solana/wallet-adapter-react';
-import { Keypair, PublicKey } from '@solana/web3.js';
+import { Cluster, PublicKey } from '@solana/web3.js';
 import { useMutation, useQuery } from '@tanstack/react-query';
 import toast from 'react-hot-toast';
 import { useCluster } from '../cluster/cluster-data-access';
 import { useAnchorProvider } from '../solana/solana-provider';
 import { useTransactionToast } from '../ui/ui-layout';
+import { useMemo } from 'react';
 
 
 export function useJournalProgram() {
   const { connection } = useConnection();
   const { cluster } = useCluster();
+  const transactionToast = useTransactionToast();
   const provider = useAnchorProvider();
-  const programId = new PublicKey("8sddtWW1q7fwzspAfZj4zNpeQjpvmD3EeCCEfnc3JnuP");
+  const programId = useMemo(
+    () => getJournalProgramId(cluster.network as Cluster),
+    [cluster]
+  );
   const program = new Program(JournalIDL, programId, provider);
+
 
   const accounts = useQuery({
     queryKey: ['journal', 'all', { cluster }],
@@ -33,11 +39,15 @@ export function useJournalProgram() {
 
   const createEntry = useMutation({
     mutationKey: ['test', 'initialize', { cluster }],
-    mutationFn: (keypair: Keypair) =>
+    mutationFn: (owner: PublicKey) =>
       program.methods
         .createJournalEntry(title, message)
-        .accounts({ journalEntry: keypair.publicKey! })
-        .signers([keypair])
+        .accounts({ 
+          journalEntry: PublicKey.findProgramAddressSync([
+            Buffer.from(title), owner.toBuffer()
+          ], programId)[0]
+         })
+        // .signers([keypair])
         .rpc(),
     onSuccess: (signature) => {
       transactionToast(signature);
