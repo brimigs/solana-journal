@@ -14813,11 +14813,6 @@
       },
       {
         "source": "web",
-        "target": "npm:react",
-        "type": "dynamic"
-      },
-      {
-        "source": "web",
         "target": "npm:@tanstack/react-query-next-experimental",
         "type": "static"
       },
@@ -14850,11 +14845,6 @@
         "source": "web",
         "target": "npm:next",
         "type": "static"
-      },
-      {
-        "source": "web",
-        "target": "npm:next",
-        "type": "dynamic"
       },
       {
         "source": "web",
@@ -14905,31 +14895,6 @@
         "source": "web",
         "target": "npm:daisyui",
         "type": "static"
-      },
-      {
-        "source": "web",
-        "target": "npm:node-gyp-build",
-        "type": "dynamic"
-      },
-      {
-        "source": "web",
-        "target": "npm:buffer",
-        "type": "dynamic"
-      },
-      {
-        "source": "web",
-        "target": "npm:events",
-        "type": "dynamic"
-      },
-      {
-        "source": "web",
-        "target": "npm:punycode",
-        "type": "dynamic"
-      },
-      {
-        "source": "web",
-        "target": "npm:string_decoder",
-        "type": "dynamic"
       }
     ],
     "npm:@ampproject/remapping": [

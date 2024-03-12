@@ -9,3 +9,8 @@ node_modules
 
 # macOS system files
 .DS_Store
+
+# next app
+.next/
+.swc/
+.*.env
