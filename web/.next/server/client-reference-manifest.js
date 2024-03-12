@@ -261,7 +261,7 @@ self.__RSC_MANIFEST={
         "id": "(sc_client)/../node_modules/next/dist/shared/lib/lazy-dynamic/dynamic-no-ssr.js",
         "name": "*",
         "chunks": [
-          "app/journal/page:static/chunks/app/journal/page.js"
+          "app/account/page:static/chunks/app/account/page.js"
         ],
         "async": false
       },
@@ -269,7 +269,7 @@ self.__RSC_MANIFEST={
         "id": "(sc_client)/../node_modules/next/dist/shared/lib/lazy-dynamic/dynamic-no-ssr.js",
         "name": "",
         "chunks": [
-          "app/journal/page:static/chunks/app/journal/page.js"
+          "app/account/page:static/chunks/app/account/page.js"
         ],
         "async": false
       },
@@ -277,7 +277,7 @@ self.__RSC_MANIFEST={
         "id": "(sc_client)/../node_modules/next/dist/shared/lib/lazy-dynamic/dynamic-no-ssr.js",
         "name": "suspense",
         "chunks": [
-          "app/journal/page:static/chunks/app/journal/page.js"
+          "app/account/page:static/chunks/app/account/page.js"
         ],
         "async": false
       },
@@ -285,7 +285,7 @@ self.__RSC_MANIFEST={
         "id": "(sc_client)/../node_modules/next/dist/shared/lib/lazy-dynamic/dynamic-no-ssr.js",
         "name": "NoSSR",
         "chunks": [
-          "app/journal/page:static/chunks/app/journal/page.js"
+          "app/account/page:static/chunks/app/account/page.js"
         ],
         "async": false
       }
@@ -419,7 +419,7 @@ self.__RSC_MANIFEST={
         "id": "(sc_client)/./components/cluster/cluster-data-access.tsx",
         "name": "*",
         "chunks": [
-          "app/journal/page:static/chunks/app/journal/page.js"
+          "app/account/page:static/chunks/app/account/page.js"
         ],
         "async": false
       },
@@ -427,7 +427,7 @@ self.__RSC_MANIFEST={
         "id": "(sc_client)/./components/cluster/cluster-data-access.tsx",
         "name": "",
         "chunks": [
-          "app/journal/page:static/chunks/app/journal/page.js"
+          "app/account/page:static/chunks/app/account/page.js"
         ],
         "async": false
       },
@@ -435,7 +435,7 @@ self.__RSC_MANIFEST={
         "id": "(sc_client)/./components/cluster/cluster-data-access.tsx",
         "name": "ClusterNetwork",
         "chunks": [
-          "app/journal/page:static/chunks/app/journal/page.js"
+          "app/account/page:static/chunks/app/account/page.js"
         ],
         "async": false
       },
@@ -443,7 +443,7 @@ self.__RSC_MANIFEST={
         "id": "(sc_client)/./components/cluster/cluster-data-access.tsx",
         "name": "ClusterProvider",
         "chunks": [
-          "app/journal/page:static/chunks/app/journal/page.js"
+          "app/account/page:static/chunks/app/account/page.js"
         ],
         "async": false
       },
@@ -451,7 +451,7 @@ self.__RSC_MANIFEST={
         "id": "(sc_client)/./components/cluster/cluster-data-access.tsx",
         "name": "defaultClusters",
         "chunks": [
-          "app/journal/page:static/chunks/app/journal/page.js"
+          "app/account/page:static/chunks/app/account/page.js"
         ],
         "async": false
       },
@@ -459,7 +459,7 @@ self.__RSC_MANIFEST={
         "id": "(sc_client)/./components/cluster/cluster-data-access.tsx",
         "name": "useCluster",
         "chunks": [
-          "app/journal/page:static/chunks/app/journal/page.js"
+          "app/account/page:static/chunks/app/account/page.js"
         ],
         "async": false
       }
@@ -553,7 +553,7 @@ self.__RSC_MANIFEST={
         "id": "(sc_client)/./components/solana/solana-provider.tsx",
         "name": "*",
         "chunks": [
-          "app/journal/page:static/chunks/app/journal/page.js"
+          "app/account/page:static/chunks/app/account/page.js"
         ],
         "async": false
       },
@@ -561,7 +561,7 @@ self.__RSC_MANIFEST={
         "id": "(sc_client)/./components/solana/solana-provider.tsx",
         "name": "",
         "chunks": [
-          "app/journal/page:static/chunks/app/journal/page.js"
+          "app/account/page:static/chunks/app/account/page.js"
         ],
         "async": false
       },
@@ -569,7 +569,7 @@ self.__RSC_MANIFEST={
         "id": "(sc_client)/./components/solana/solana-provider.tsx",
         "name": "SolanaProvider",
         "chunks": [
-          "app/journal/page:static/chunks/app/journal/page.js"
+          "app/account/page:static/chunks/app/account/page.js"
         ],
         "async": false
       },
@@ -577,7 +577,7 @@ self.__RSC_MANIFEST={
         "id": "(sc_client)/./components/solana/solana-provider.tsx",
         "name": "WalletButton",
         "chunks": [
-          "app/journal/page:static/chunks/app/journal/page.js"
+          "app/account/page:static/chunks/app/account/page.js"
         ],
         "async": false
       },
@@ -585,7 +585,7 @@ self.__RSC_MANIFEST={
         "id": "(sc_client)/./components/solana/solana-provider.tsx",
         "name": "useAnchorProvider",
         "chunks": [
-          "app/journal/page:static/chunks/app/journal/page.js"
+          "app/account/page:static/chunks/app/account/page.js"
         ],
         "async": false
       }
@@ -670,6 +670,32 @@ self.__RSC_MANIFEST={
         "name": "ReactQueryProvider",
         "chunks": [
           "app/layout:static/chunks/app/layout.js"
+        ],
+        "async": false
+      }
+    },
+    "(app-client)/./components/cluster/cluster-feature.tsx": {
+      "*": {
+        "id": "(sc_client)/./components/cluster/cluster-feature.tsx",
+        "name": "*",
+        "chunks": [
+          "app/clusters/page:static/chunks/app/clusters/page.js"
+        ],
+        "async": false
+      },
+      "": {
+        "id": "(sc_client)/./components/cluster/cluster-feature.tsx",
+        "name": "",
+        "chunks": [
+          "app/clusters/page:static/chunks/app/clusters/page.js"
+        ],
+        "async": false
+      },
+      "default": {
+        "id": "(sc_client)/./components/cluster/cluster-feature.tsx",
+        "name": "default",
+        "chunks": [
+          "app/clusters/page:static/chunks/app/clusters/page.js"
         ],
         "async": false
       }
@@ -767,22 +793,54 @@ self.__RSC_MANIFEST={
         ],
         "async": false
       }
+    },
+    "(app-client)/./components/account/account-list-feature.tsx": {
+      "*": {
+        "id": "(sc_client)/./components/account/account-list-feature.tsx",
+        "name": "*",
+        "chunks": [
+          "app/account/page:static/chunks/app/account/page.js"
+        ],
+        "async": false
+      },
+      "": {
+        "id": "(sc_client)/./components/account/account-list-feature.tsx",
+        "name": "",
+        "chunks": [
+          "app/account/page:static/chunks/app/account/page.js"
+        ],
+        "async": false
+      },
+      "default": {
+        "id": "(sc_client)/./components/account/account-list-feature.tsx",
+        "name": "default",
+        "chunks": [
+          "app/account/page:static/chunks/app/account/page.js"
+        ],
+        "async": false
+      }
     }
   },
   "edgeSSRModuleMapping": {},
   "cssFiles": {
-    "/Users/brimigs/Documents/solana/journal/web/app/page": [
+    "/Users/brimigs/Documents/solana/solana-journal/web/app/page": [
       "static/css/app/page.css"
     ],
-    "/Users/brimigs/Documents/solana/journal/web/app/layout": [
+    "/Users/brimigs/Documents/solana/solana-journal/web/app/layout": [
       "static/css/app/layout.css"
     ],
-    "/Users/brimigs/Documents/solana/journal/web/app/journal/page": [
+    "/Users/brimigs/Documents/solana/solana-journal/web/app/clusters/page": [
+      "static/css/app/clusters/page.css"
+    ],
+    "/Users/brimigs/Documents/solana/solana-journal/web/app/journal/page": [
       "static/css/app/journal/page.css"
+    ],
+    "/Users/brimigs/Documents/solana/solana-journal/web/app/account/page": [
+      "static/css/app/account/page.css"
     ]
   },
   "clientModules": {
-    "/Users/brimigs/Documents/solana/journal/node_modules/next/dist/client/components/app-router.js": {
+    "/Users/brimigs/Documents/solana/solana-journal/node_modules/next/dist/client/components/app-router.js": {
       "id": "(app-client)/../node_modules/next/dist/client/components/app-router.js",
       "name": "*",
       "chunks": [
@@ -790,7 +848,7 @@ self.__RSC_MANIFEST={
       ],
       "async": false
     },
-    "/Users/brimigs/Documents/solana/journal/node_modules/next/dist/esm/client/components/app-router.js": {
+    "/Users/brimigs/Documents/solana/solana-journal/node_modules/next/dist/esm/client/components/app-router.js": {
       "id": "(app-client)/../node_modules/next/dist/client/components/app-router.js",
       "name": "*",
       "chunks": [
@@ -798,7 +856,7 @@ self.__RSC_MANIFEST={
       ],
       "async": false
     },
-    "/Users/brimigs/Documents/solana/journal/node_modules/next/dist/client/components/app-router.js#": {
+    "/Users/brimigs/Documents/solana/solana-journal/node_modules/next/dist/client/components/app-router.js#": {
       "id": "(app-client)/../node_modules/next/dist/client/components/app-router.js",
       "name": "",
       "chunks": [
@@ -806,7 +864,7 @@ self.__RSC_MANIFEST={
       ],
       "async": false
     },
-    "/Users/brimigs/Documents/solana/journal/node_modules/next/dist/esm/client/components/app-router.js#": {
+    "/Users/brimigs/Documents/solana/solana-journal/node_modules/next/dist/esm/client/components/app-router.js#": {
       "id": "(app-client)/../node_modules/next/dist/client/components/app-router.js",
       "name": "",
       "chunks": [
@@ -814,7 +872,7 @@ self.__RSC_MANIFEST={
       ],
       "async": false
     },
-    "/Users/brimigs/Documents/solana/journal/node_modules/next/dist/client/components/app-router.js#default": {
+    "/Users/brimigs/Documents/solana/solana-journal/node_modules/next/dist/client/components/app-router.js#default": {
       "id": "(app-client)/../node_modules/next/dist/client/components/app-router.js",
       "name": "default",
       "chunks": [
@@ -822,7 +880,7 @@ self.__RSC_MANIFEST={
       ],
       "async": false
     },
-    "/Users/brimigs/Documents/solana/journal/node_modules/next/dist/esm/client/components/app-router.js#default": {
+    "/Users/brimigs/Documents/solana/solana-journal/node_modules/next/dist/esm/client/components/app-router.js#default": {
       "id": "(app-client)/../node_modules/next/dist/client/components/app-router.js",
       "name": "default",
       "chunks": [
@@ -830,15 +888,7 @@ self.__RSC_MANIFEST={
       ],
       "async": false
     },
-    "/Users/brimigs/Documents/solana/journal/node_modules/next/dist/client/components/app-router.js#getServerActionDispatcher": {
-      "id": "(app-client)/../node_modules/next/dist/client/components/app-router.js",
-      "name": "getServerActionDispatcher",
-      "chunks": [
-        "webpack:static/chunks/webpack.js"
-      ],
-      "async": false
-    },
-    "/Users/brimigs/Documents/solana/journal/node_modules/next/dist/esm/client/components/app-router.js#getServerActionDispatcher": {
+    "/Users/brimigs/Documents/solana/solana-journal/node_modules/next/dist/client/components/app-router.js#getServerActionDispatcher": {
       "id": "(app-client)/../node_modules/next/dist/client/components/app-router.js",
       "name": "getServerActionDispatcher",
       "chunks": [
@@ -846,7 +896,15 @@ self.__RSC_MANIFEST={
       ],
       "async": false
     },
-    "/Users/brimigs/Documents/solana/journal/node_modules/next/dist/client/components/app-router.js#urlToUrlWithoutFlightMarker": {
+    "/Users/brimigs/Documents/solana/solana-journal/node_modules/next/dist/esm/client/components/app-router.js#getServerActionDispatcher": {
+      "id": "(app-client)/../node_modules/next/dist/client/components/app-router.js",
+      "name": "getServerActionDispatcher",
+      "chunks": [
+        "webpack:static/chunks/webpack.js"
+      ],
+      "async": false
+    },
+    "/Users/brimigs/Documents/solana/solana-journal/node_modules/next/dist/client/components/app-router.js#urlToUrlWithoutFlightMarker": {
       "id": "(app-client)/../node_modules/next/dist/client/components/app-router.js",
       "name": "urlToUrlWithoutFlightMarker",
       "chunks": [
@@ -854,7 +912,7 @@ self.__RSC_MANIFEST={
       ],
       "async": false
     },
-    "/Users/brimigs/Documents/solana/journal/node_modules/next/dist/esm/client/components/app-router.js#urlToUrlWithoutFlightMarker": {
+    "/Users/brimigs/Documents/solana/solana-journal/node_modules/next/dist/esm/client/components/app-router.js#urlToUrlWithoutFlightMarker": {
       "id": "(app-client)/../node_modules/next/dist/client/components/app-router.js",
       "name": "urlToUrlWithoutFlightMarker",
       "chunks": [
@@ -862,7 +920,7 @@ self.__RSC_MANIFEST={
       ],
       "async": false
     },
-    "/Users/brimigs/Documents/solana/journal/node_modules/next/dist/client/components/error-boundary.js": {
+    "/Users/brimigs/Documents/solana/solana-journal/node_modules/next/dist/client/components/error-boundary.js": {
       "id": "(app-client)/../node_modules/next/dist/client/components/error-boundary.js",
       "name": "*",
       "chunks": [
@@ -870,7 +928,7 @@ self.__RSC_MANIFEST={
       ],
       "async": false
     },
-    "/Users/brimigs/Documents/solana/journal/node_modules/next/dist/esm/client/components/error-boundary.js": {
+    "/Users/brimigs/Documents/solana/solana-journal/node_modules/next/dist/esm/client/components/error-boundary.js": {
       "id": "(app-client)/../node_modules/next/dist/client/components/error-boundary.js",
       "name": "*",
       "chunks": [
@@ -878,7 +936,7 @@ self.__RSC_MANIFEST={
       ],
       "async": false
     },
-    "/Users/brimigs/Documents/solana/journal/node_modules/next/dist/client/components/error-boundary.js#": {
+    "/Users/brimigs/Documents/solana/solana-journal/node_modules/next/dist/client/components/error-boundary.js#": {
       "id": "(app-client)/../node_modules/next/dist/client/components/error-boundary.js",
       "name": "",
       "chunks": [
@@ -886,7 +944,7 @@ self.__RSC_MANIFEST={
       ],
       "async": false
     },
-    "/Users/brimigs/Documents/solana/journal/node_modules/next/dist/esm/client/components/error-boundary.js#": {
+    "/Users/brimigs/Documents/solana/solana-journal/node_modules/next/dist/esm/client/components/error-boundary.js#": {
       "id": "(app-client)/../node_modules/next/dist/client/components/error-boundary.js",
       "name": "",
       "chunks": [
@@ -894,7 +952,7 @@ self.__RSC_MANIFEST={
       ],
       "async": false
     },
-    "/Users/brimigs/Documents/solana/journal/node_modules/next/dist/client/components/error-boundary.js#default": {
+    "/Users/brimigs/Documents/solana/solana-journal/node_modules/next/dist/client/components/error-boundary.js#default": {
       "id": "(app-client)/../node_modules/next/dist/client/components/error-boundary.js",
       "name": "default",
       "chunks": [
@@ -902,7 +960,7 @@ self.__RSC_MANIFEST={
       ],
       "async": false
     },
-    "/Users/brimigs/Documents/solana/journal/node_modules/next/dist/esm/client/components/error-boundary.js#default": {
+    "/Users/brimigs/Documents/solana/solana-journal/node_modules/next/dist/esm/client/components/error-boundary.js#default": {
       "id": "(app-client)/../node_modules/next/dist/client/components/error-boundary.js",
       "name": "default",
       "chunks": [
@@ -910,15 +968,7 @@ self.__RSC_MANIFEST={
       ],
       "async": false
     },
-    "/Users/brimigs/Documents/solana/journal/node_modules/next/dist/client/components/error-boundary.js#ErrorBoundaryHandler": {
-      "id": "(app-client)/../node_modules/next/dist/client/components/error-boundary.js",
-      "name": "ErrorBoundaryHandler",
-      "chunks": [
-        "webpack:static/chunks/webpack.js"
-      ],
-      "async": false
-    },
-    "/Users/brimigs/Documents/solana/journal/node_modules/next/dist/esm/client/components/error-boundary.js#ErrorBoundaryHandler": {
+    "/Users/brimigs/Documents/solana/solana-journal/node_modules/next/dist/client/components/error-boundary.js#ErrorBoundaryHandler": {
       "id": "(app-client)/../node_modules/next/dist/client/components/error-boundary.js",
       "name": "ErrorBoundaryHandler",
       "chunks": [
@@ -926,7 +976,15 @@ self.__RSC_MANIFEST={
       ],
       "async": false
     },
-    "/Users/brimigs/Documents/solana/journal/node_modules/next/dist/client/components/error-boundary.js#ErrorBoundary": {
+    "/Users/brimigs/Documents/solana/solana-journal/node_modules/next/dist/esm/client/components/error-boundary.js#ErrorBoundaryHandler": {
+      "id": "(app-client)/../node_modules/next/dist/client/components/error-boundary.js",
+      "name": "ErrorBoundaryHandler",
+      "chunks": [
+        "webpack:static/chunks/webpack.js"
+      ],
+      "async": false
+    },
+    "/Users/brimigs/Documents/solana/solana-journal/node_modules/next/dist/client/components/error-boundary.js#ErrorBoundary": {
       "id": "(app-client)/../node_modules/next/dist/client/components/error-boundary.js",
       "name": "ErrorBoundary",
       "chunks": [
@@ -934,7 +992,7 @@ self.__RSC_MANIFEST={
       ],
       "async": false
     },
-    "/Users/brimigs/Documents/solana/journal/node_modules/next/dist/esm/client/components/error-boundary.js#ErrorBoundary": {
+    "/Users/brimigs/Documents/solana/solana-journal/node_modules/next/dist/esm/client/components/error-boundary.js#ErrorBoundary": {
       "id": "(app-client)/../node_modules/next/dist/client/components/error-boundary.js",
       "name": "ErrorBoundary",
       "chunks": [
@@ -942,7 +1000,7 @@ self.__RSC_MANIFEST={
       ],
       "async": false
     },
-    "/Users/brimigs/Documents/solana/journal/node_modules/next/dist/client/components/redirect-boundary.js": {
+    "/Users/brimigs/Documents/solana/solana-journal/node_modules/next/dist/client/components/redirect-boundary.js": {
       "id": "(app-client)/../node_modules/next/dist/client/components/redirect-boundary.js",
       "name": "*",
       "chunks": [
@@ -950,7 +1008,7 @@ self.__RSC_MANIFEST={
       ],
       "async": false
     },
-    "/Users/brimigs/Documents/solana/journal/node_modules/next/dist/esm/client/components/redirect-boundary.js": {
+    "/Users/brimigs/Documents/solana/solana-journal/node_modules/next/dist/esm/client/components/redirect-boundary.js": {
       "id": "(app-client)/../node_modules/next/dist/client/components/redirect-boundary.js",
       "name": "*",
       "chunks": [
@@ -958,7 +1016,7 @@ self.__RSC_MANIFEST={
       ],
       "async": false
     },
-    "/Users/brimigs/Documents/solana/journal/node_modules/next/dist/client/components/redirect-boundary.js#": {
+    "/Users/brimigs/Documents/solana/solana-journal/node_modules/next/dist/client/components/redirect-boundary.js#": {
       "id": "(app-client)/../node_modules/next/dist/client/components/redirect-boundary.js",
       "name": "",
       "chunks": [
@@ -966,7 +1024,7 @@ self.__RSC_MANIFEST={
       ],
       "async": false
     },
-    "/Users/brimigs/Documents/solana/journal/node_modules/next/dist/esm/client/components/redirect-boundary.js#": {
+    "/Users/brimigs/Documents/solana/solana-journal/node_modules/next/dist/esm/client/components/redirect-boundary.js#": {
       "id": "(app-client)/../node_modules/next/dist/client/components/redirect-boundary.js",
       "name": "",
       "chunks": [
@@ -974,7 +1032,7 @@ self.__RSC_MANIFEST={
       ],
       "async": false
     },
-    "/Users/brimigs/Documents/solana/journal/node_modules/next/dist/client/components/redirect-boundary.js#default": {
+    "/Users/brimigs/Documents/solana/solana-journal/node_modules/next/dist/client/components/redirect-boundary.js#default": {
       "id": "(app-client)/../node_modules/next/dist/client/components/redirect-boundary.js",
       "name": "default",
       "chunks": [
@@ -982,7 +1040,7 @@ self.__RSC_MANIFEST={
       ],
       "async": false
     },
-    "/Users/brimigs/Documents/solana/journal/node_modules/next/dist/esm/client/components/redirect-boundary.js#default": {
+    "/Users/brimigs/Documents/solana/solana-journal/node_modules/next/dist/esm/client/components/redirect-boundary.js#default": {
       "id": "(app-client)/../node_modules/next/dist/client/components/redirect-boundary.js",
       "name": "default",
       "chunks": [
@@ -990,15 +1048,7 @@ self.__RSC_MANIFEST={
       ],
       "async": false
     },
-    "/Users/brimigs/Documents/solana/journal/node_modules/next/dist/client/components/redirect-boundary.js#RedirectErrorBoundary": {
-      "id": "(app-client)/../node_modules/next/dist/client/components/redirect-boundary.js",
-      "name": "RedirectErrorBoundary",
-      "chunks": [
-        "webpack:static/chunks/webpack.js"
-      ],
-      "async": false
-    },
-    "/Users/brimigs/Documents/solana/journal/node_modules/next/dist/esm/client/components/redirect-boundary.js#RedirectErrorBoundary": {
+    "/Users/brimigs/Documents/solana/solana-journal/node_modules/next/dist/client/components/redirect-boundary.js#RedirectErrorBoundary": {
       "id": "(app-client)/../node_modules/next/dist/client/components/redirect-boundary.js",
       "name": "RedirectErrorBoundary",
       "chunks": [
@@ -1006,7 +1056,15 @@ self.__RSC_MANIFEST={
       ],
       "async": false
     },
-    "/Users/brimigs/Documents/solana/journal/node_modules/next/dist/client/components/redirect-boundary.js#RedirectBoundary": {
+    "/Users/brimigs/Documents/solana/solana-journal/node_modules/next/dist/esm/client/components/redirect-boundary.js#RedirectErrorBoundary": {
+      "id": "(app-client)/../node_modules/next/dist/client/components/redirect-boundary.js",
+      "name": "RedirectErrorBoundary",
+      "chunks": [
+        "webpack:static/chunks/webpack.js"
+      ],
+      "async": false
+    },
+    "/Users/brimigs/Documents/solana/solana-journal/node_modules/next/dist/client/components/redirect-boundary.js#RedirectBoundary": {
       "id": "(app-client)/../node_modules/next/dist/client/components/redirect-boundary.js",
       "name": "RedirectBoundary",
       "chunks": [
@@ -1014,7 +1072,7 @@ self.__RSC_MANIFEST={
       ],
       "async": false
     },
-    "/Users/brimigs/Documents/solana/journal/node_modules/next/dist/esm/client/components/redirect-boundary.js#RedirectBoundary": {
+    "/Users/brimigs/Documents/solana/solana-journal/node_modules/next/dist/esm/client/components/redirect-boundary.js#RedirectBoundary": {
       "id": "(app-client)/../node_modules/next/dist/client/components/redirect-boundary.js",
       "name": "RedirectBoundary",
       "chunks": [
@@ -1022,7 +1080,7 @@ self.__RSC_MANIFEST={
       ],
       "async": false
     },
-    "/Users/brimigs/Documents/solana/journal/node_modules/next/dist/client/components/router-reducer/fetch-server-response.js": {
+    "/Users/brimigs/Documents/solana/solana-journal/node_modules/next/dist/client/components/router-reducer/fetch-server-response.js": {
       "id": "(app-client)/../node_modules/next/dist/client/components/router-reducer/fetch-server-response.js",
       "name": "*",
       "chunks": [
@@ -1030,7 +1088,7 @@ self.__RSC_MANIFEST={
       ],
       "async": false
     },
-    "/Users/brimigs/Documents/solana/journal/node_modules/next/dist/esm/client/components/router-reducer/fetch-server-response.js": {
+    "/Users/brimigs/Documents/solana/solana-journal/node_modules/next/dist/esm/client/components/router-reducer/fetch-server-response.js": {
       "id": "(app-client)/../node_modules/next/dist/client/components/router-reducer/fetch-server-response.js",
       "name": "*",
       "chunks": [
@@ -1038,7 +1096,7 @@ self.__RSC_MANIFEST={
       ],
       "async": false
     },
-    "/Users/brimigs/Documents/solana/journal/node_modules/next/dist/client/components/router-reducer/fetch-server-response.js#": {
+    "/Users/brimigs/Documents/solana/solana-journal/node_modules/next/dist/client/components/router-reducer/fetch-server-response.js#": {
       "id": "(app-client)/../node_modules/next/dist/client/components/router-reducer/fetch-server-response.js",
       "name": "",
       "chunks": [
@@ -1046,7 +1104,7 @@ self.__RSC_MANIFEST={
       ],
       "async": false
     },
-    "/Users/brimigs/Documents/solana/journal/node_modules/next/dist/esm/client/components/router-reducer/fetch-server-response.js#": {
+    "/Users/brimigs/Documents/solana/solana-journal/node_modules/next/dist/esm/client/components/router-reducer/fetch-server-response.js#": {
       "id": "(app-client)/../node_modules/next/dist/client/components/router-reducer/fetch-server-response.js",
       "name": "",
       "chunks": [
@@ -1054,7 +1112,7 @@ self.__RSC_MANIFEST={
       ],
       "async": false
     },
-    "/Users/brimigs/Documents/solana/journal/node_modules/next/dist/client/components/router-reducer/fetch-server-response.js#default": {
+    "/Users/brimigs/Documents/solana/solana-journal/node_modules/next/dist/client/components/router-reducer/fetch-server-response.js#default": {
       "id": "(app-client)/../node_modules/next/dist/client/components/router-reducer/fetch-server-response.js",
       "name": "default",
       "chunks": [
@@ -1062,7 +1120,7 @@ self.__RSC_MANIFEST={
       ],
       "async": false
     },
-    "/Users/brimigs/Documents/solana/journal/node_modules/next/dist/esm/client/components/router-reducer/fetch-server-response.js#default": {
+    "/Users/brimigs/Documents/solana/solana-journal/node_modules/next/dist/esm/client/components/router-reducer/fetch-server-response.js#default": {
       "id": "(app-client)/../node_modules/next/dist/client/components/router-reducer/fetch-server-response.js",
       "name": "default",
       "chunks": [
@@ -1070,7 +1128,7 @@ self.__RSC_MANIFEST={
       ],
       "async": false
     },
-    "/Users/brimigs/Documents/solana/journal/node_modules/next/dist/shared/lib/app-router-context.js": {
+    "/Users/brimigs/Documents/solana/solana-journal/node_modules/next/dist/shared/lib/app-router-context.js": {
       "id": "(app-client)/../node_modules/next/dist/shared/lib/app-router-context.js",
       "name": "*",
       "chunks": [
@@ -1078,7 +1136,7 @@ self.__RSC_MANIFEST={
       ],
       "async": false
     },
-    "/Users/brimigs/Documents/solana/journal/node_modules/next/dist/esm/shared/lib/app-router-context.js": {
+    "/Users/brimigs/Documents/solana/solana-journal/node_modules/next/dist/esm/shared/lib/app-router-context.js": {
       "id": "(app-client)/../node_modules/next/dist/shared/lib/app-router-context.js",
       "name": "*",
       "chunks": [
@@ -1086,7 +1144,7 @@ self.__RSC_MANIFEST={
       ],
       "async": false
     },
-    "/Users/brimigs/Documents/solana/journal/node_modules/next/dist/shared/lib/app-router-context.js#": {
+    "/Users/brimigs/Documents/solana/solana-journal/node_modules/next/dist/shared/lib/app-router-context.js#": {
       "id": "(app-client)/../node_modules/next/dist/shared/lib/app-router-context.js",
       "name": "",
       "chunks": [
@@ -1094,7 +1152,7 @@ self.__RSC_MANIFEST={
       ],
       "async": false
     },
-    "/Users/brimigs/Documents/solana/journal/node_modules/next/dist/esm/shared/lib/app-router-context.js#": {
+    "/Users/brimigs/Documents/solana/solana-journal/node_modules/next/dist/esm/shared/lib/app-router-context.js#": {
       "id": "(app-client)/../node_modules/next/dist/shared/lib/app-router-context.js",
       "name": "",
       "chunks": [
@@ -1102,7 +1160,7 @@ self.__RSC_MANIFEST={
       ],
       "async": false
     },
-    "/Users/brimigs/Documents/solana/journal/node_modules/next/dist/shared/lib/app-router-context.js#CacheStates": {
+    "/Users/brimigs/Documents/solana/solana-journal/node_modules/next/dist/shared/lib/app-router-context.js#CacheStates": {
       "id": "(app-client)/../node_modules/next/dist/shared/lib/app-router-context.js",
       "name": "CacheStates",
       "chunks": [
@@ -1110,7 +1168,7 @@ self.__RSC_MANIFEST={
       ],
       "async": false
     },
-    "/Users/brimigs/Documents/solana/journal/node_modules/next/dist/esm/shared/lib/app-router-context.js#CacheStates": {
+    "/Users/brimigs/Documents/solana/solana-journal/node_modules/next/dist/esm/shared/lib/app-router-context.js#CacheStates": {
       "id": "(app-client)/../node_modules/next/dist/shared/lib/app-router-context.js",
       "name": "CacheStates",
       "chunks": [
@@ -1118,7 +1176,7 @@ self.__RSC_MANIFEST={
       ],
       "async": false
     },
-    "/Users/brimigs/Documents/solana/journal/node_modules/next/dist/shared/lib/app-router-context.js#AppRouterContext": {
+    "/Users/brimigs/Documents/solana/solana-journal/node_modules/next/dist/shared/lib/app-router-context.js#AppRouterContext": {
       "id": "(app-client)/../node_modules/next/dist/shared/lib/app-router-context.js",
       "name": "AppRouterContext",
       "chunks": [
@@ -1126,7 +1184,7 @@ self.__RSC_MANIFEST={
       ],
       "async": false
     },
-    "/Users/brimigs/Documents/solana/journal/node_modules/next/dist/esm/shared/lib/app-router-context.js#AppRouterContext": {
+    "/Users/brimigs/Documents/solana/solana-journal/node_modules/next/dist/esm/shared/lib/app-router-context.js#AppRouterContext": {
       "id": "(app-client)/../node_modules/next/dist/shared/lib/app-router-context.js",
       "name": "AppRouterContext",
       "chunks": [
@@ -1134,7 +1192,7 @@ self.__RSC_MANIFEST={
       ],
       "async": false
     },
-    "/Users/brimigs/Documents/solana/journal/node_modules/next/dist/shared/lib/app-router-context.js#LayoutRouterContext": {
+    "/Users/brimigs/Documents/solana/solana-journal/node_modules/next/dist/shared/lib/app-router-context.js#LayoutRouterContext": {
       "id": "(app-client)/../node_modules/next/dist/shared/lib/app-router-context.js",
       "name": "LayoutRouterContext",
       "chunks": [
@@ -1142,7 +1200,7 @@ self.__RSC_MANIFEST={
       ],
       "async": false
     },
-    "/Users/brimigs/Documents/solana/journal/node_modules/next/dist/esm/shared/lib/app-router-context.js#LayoutRouterContext": {
+    "/Users/brimigs/Documents/solana/solana-journal/node_modules/next/dist/esm/shared/lib/app-router-context.js#LayoutRouterContext": {
       "id": "(app-client)/../node_modules/next/dist/shared/lib/app-router-context.js",
       "name": "LayoutRouterContext",
       "chunks": [
@@ -1150,7 +1208,7 @@ self.__RSC_MANIFEST={
       ],
       "async": false
     },
-    "/Users/brimigs/Documents/solana/journal/node_modules/next/dist/shared/lib/app-router-context.js#GlobalLayoutRouterContext": {
+    "/Users/brimigs/Documents/solana/solana-journal/node_modules/next/dist/shared/lib/app-router-context.js#GlobalLayoutRouterContext": {
       "id": "(app-client)/../node_modules/next/dist/shared/lib/app-router-context.js",
       "name": "GlobalLayoutRouterContext",
       "chunks": [
@@ -1158,7 +1216,7 @@ self.__RSC_MANIFEST={
       ],
       "async": false
     },
-    "/Users/brimigs/Documents/solana/journal/node_modules/next/dist/esm/shared/lib/app-router-context.js#GlobalLayoutRouterContext": {
+    "/Users/brimigs/Documents/solana/solana-journal/node_modules/next/dist/esm/shared/lib/app-router-context.js#GlobalLayoutRouterContext": {
       "id": "(app-client)/../node_modules/next/dist/shared/lib/app-router-context.js",
       "name": "GlobalLayoutRouterContext",
       "chunks": [
@@ -1166,7 +1224,7 @@ self.__RSC_MANIFEST={
       ],
       "async": false
     },
-    "/Users/brimigs/Documents/solana/journal/node_modules/next/dist/shared/lib/app-router-context.js#TemplateContext": {
+    "/Users/brimigs/Documents/solana/solana-journal/node_modules/next/dist/shared/lib/app-router-context.js#TemplateContext": {
       "id": "(app-client)/../node_modules/next/dist/shared/lib/app-router-context.js",
       "name": "TemplateContext",
       "chunks": [
@@ -1174,7 +1232,7 @@ self.__RSC_MANIFEST={
       ],
       "async": false
     },
-    "/Users/brimigs/Documents/solana/journal/node_modules/next/dist/esm/shared/lib/app-router-context.js#TemplateContext": {
+    "/Users/brimigs/Documents/solana/solana-journal/node_modules/next/dist/esm/shared/lib/app-router-context.js#TemplateContext": {
       "id": "(app-client)/../node_modules/next/dist/shared/lib/app-router-context.js",
       "name": "TemplateContext",
       "chunks": [
@@ -1182,7 +1240,7 @@ self.__RSC_MANIFEST={
       ],
       "async": false
     },
-    "/Users/brimigs/Documents/solana/journal/node_modules/next/dist/shared/lib/hooks-client-context.js": {
+    "/Users/brimigs/Documents/solana/solana-journal/node_modules/next/dist/shared/lib/hooks-client-context.js": {
       "id": "(app-client)/../node_modules/next/dist/shared/lib/hooks-client-context.js",
       "name": "*",
       "chunks": [
@@ -1190,7 +1248,7 @@ self.__RSC_MANIFEST={
       ],
       "async": false
     },
-    "/Users/brimigs/Documents/solana/journal/node_modules/next/dist/esm/shared/lib/hooks-client-context.js": {
+    "/Users/brimigs/Documents/solana/solana-journal/node_modules/next/dist/esm/shared/lib/hooks-client-context.js": {
       "id": "(app-client)/../node_modules/next/dist/shared/lib/hooks-client-context.js",
       "name": "*",
       "chunks": [
@@ -1198,7 +1256,7 @@ self.__RSC_MANIFEST={
       ],
       "async": false
     },
-    "/Users/brimigs/Documents/solana/journal/node_modules/next/dist/shared/lib/hooks-client-context.js#": {
+    "/Users/brimigs/Documents/solana/solana-journal/node_modules/next/dist/shared/lib/hooks-client-context.js#": {
       "id": "(app-client)/../node_modules/next/dist/shared/lib/hooks-client-context.js",
       "name": "",
       "chunks": [
@@ -1206,7 +1264,7 @@ self.__RSC_MANIFEST={
       ],
       "async": false
     },
-    "/Users/brimigs/Documents/solana/journal/node_modules/next/dist/esm/shared/lib/hooks-client-context.js#": {
+    "/Users/brimigs/Documents/solana/solana-journal/node_modules/next/dist/esm/shared/lib/hooks-client-context.js#": {
       "id": "(app-client)/../node_modules/next/dist/shared/lib/hooks-client-context.js",
       "name": "",
       "chunks": [
@@ -1214,15 +1272,7 @@ self.__RSC_MANIFEST={
       ],
       "async": false
     },
-    "/Users/brimigs/Documents/solana/journal/node_modules/next/dist/shared/lib/hooks-client-context.js#SearchParamsContext": {
-      "id": "(app-client)/../node_modules/next/dist/shared/lib/hooks-client-context.js",
-      "name": "SearchParamsContext",
-      "chunks": [
-        "webpack:static/chunks/webpack.js"
-      ],
-      "async": false
-    },
-    "/Users/brimigs/Documents/solana/journal/node_modules/next/dist/esm/shared/lib/hooks-client-context.js#SearchParamsContext": {
+    "/Users/brimigs/Documents/solana/solana-journal/node_modules/next/dist/shared/lib/hooks-client-context.js#SearchParamsContext": {
       "id": "(app-client)/../node_modules/next/dist/shared/lib/hooks-client-context.js",
       "name": "SearchParamsContext",
       "chunks": [
@@ -1230,7 +1280,15 @@ self.__RSC_MANIFEST={
       ],
       "async": false
     },
-    "/Users/brimigs/Documents/solana/journal/node_modules/next/dist/shared/lib/hooks-client-context.js#PathnameContext": {
+    "/Users/brimigs/Documents/solana/solana-journal/node_modules/next/dist/esm/shared/lib/hooks-client-context.js#SearchParamsContext": {
+      "id": "(app-client)/../node_modules/next/dist/shared/lib/hooks-client-context.js",
+      "name": "SearchParamsContext",
+      "chunks": [
+        "webpack:static/chunks/webpack.js"
+      ],
+      "async": false
+    },
+    "/Users/brimigs/Documents/solana/solana-journal/node_modules/next/dist/shared/lib/hooks-client-context.js#PathnameContext": {
       "id": "(app-client)/../node_modules/next/dist/shared/lib/hooks-client-context.js",
       "name": "PathnameContext",
       "chunks": [
@@ -1238,7 +1296,7 @@ self.__RSC_MANIFEST={
       ],
       "async": false
     },
-    "/Users/brimigs/Documents/solana/journal/node_modules/next/dist/esm/shared/lib/hooks-client-context.js#PathnameContext": {
+    "/Users/brimigs/Documents/solana/solana-journal/node_modules/next/dist/esm/shared/lib/hooks-client-context.js#PathnameContext": {
       "id": "(app-client)/../node_modules/next/dist/shared/lib/hooks-client-context.js",
       "name": "PathnameContext",
       "chunks": [
@@ -1246,7 +1304,7 @@ self.__RSC_MANIFEST={
       ],
       "async": false
     },
-    "/Users/brimigs/Documents/solana/journal/node_modules/next/dist/shared/lib/server-inserted-html.js": {
+    "/Users/brimigs/Documents/solana/solana-journal/node_modules/next/dist/shared/lib/server-inserted-html.js": {
       "id": "(app-client)/../node_modules/next/dist/shared/lib/server-inserted-html.js",
       "name": "*",
       "chunks": [
@@ -1254,7 +1312,7 @@ self.__RSC_MANIFEST={
       ],
       "async": false
     },
-    "/Users/brimigs/Documents/solana/journal/node_modules/next/dist/esm/shared/lib/server-inserted-html.js": {
+    "/Users/brimigs/Documents/solana/solana-journal/node_modules/next/dist/esm/shared/lib/server-inserted-html.js": {
       "id": "(app-client)/../node_modules/next/dist/shared/lib/server-inserted-html.js",
       "name": "*",
       "chunks": [
@@ -1262,7 +1320,7 @@ self.__RSC_MANIFEST={
       ],
       "async": false
     },
-    "/Users/brimigs/Documents/solana/journal/node_modules/next/dist/shared/lib/server-inserted-html.js#": {
+    "/Users/brimigs/Documents/solana/solana-journal/node_modules/next/dist/shared/lib/server-inserted-html.js#": {
       "id": "(app-client)/../node_modules/next/dist/shared/lib/server-inserted-html.js",
       "name": "",
       "chunks": [
@@ -1270,7 +1328,7 @@ self.__RSC_MANIFEST={
       ],
       "async": false
     },
-    "/Users/brimigs/Documents/solana/journal/node_modules/next/dist/esm/shared/lib/server-inserted-html.js#": {
+    "/Users/brimigs/Documents/solana/solana-journal/node_modules/next/dist/esm/shared/lib/server-inserted-html.js#": {
       "id": "(app-client)/../node_modules/next/dist/shared/lib/server-inserted-html.js",
       "name": "",
       "chunks": [
@@ -1278,15 +1336,7 @@ self.__RSC_MANIFEST={
       ],
       "async": false
     },
-    "/Users/brimigs/Documents/solana/journal/node_modules/next/dist/shared/lib/server-inserted-html.js#ServerInsertedHTMLContext": {
-      "id": "(app-client)/../node_modules/next/dist/shared/lib/server-inserted-html.js",
-      "name": "ServerInsertedHTMLContext",
-      "chunks": [
-        "webpack:static/chunks/webpack.js"
-      ],
-      "async": false
-    },
-    "/Users/brimigs/Documents/solana/journal/node_modules/next/dist/esm/shared/lib/server-inserted-html.js#ServerInsertedHTMLContext": {
+    "/Users/brimigs/Documents/solana/solana-journal/node_modules/next/dist/shared/lib/server-inserted-html.js#ServerInsertedHTMLContext": {
       "id": "(app-client)/../node_modules/next/dist/shared/lib/server-inserted-html.js",
       "name": "ServerInsertedHTMLContext",
       "chunks": [
@@ -1294,7 +1344,15 @@ self.__RSC_MANIFEST={
       ],
       "async": false
     },
-    "/Users/brimigs/Documents/solana/journal/node_modules/next/dist/shared/lib/server-inserted-html.js#useServerInsertedHTML": {
+    "/Users/brimigs/Documents/solana/solana-journal/node_modules/next/dist/esm/shared/lib/server-inserted-html.js#ServerInsertedHTMLContext": {
+      "id": "(app-client)/../node_modules/next/dist/shared/lib/server-inserted-html.js",
+      "name": "ServerInsertedHTMLContext",
+      "chunks": [
+        "webpack:static/chunks/webpack.js"
+      ],
+      "async": false
+    },
+    "/Users/brimigs/Documents/solana/solana-journal/node_modules/next/dist/shared/lib/server-inserted-html.js#useServerInsertedHTML": {
       "id": "(app-client)/../node_modules/next/dist/shared/lib/server-inserted-html.js",
       "name": "useServerInsertedHTML",
       "chunks": [
@@ -1302,7 +1360,7 @@ self.__RSC_MANIFEST={
       ],
       "async": false
     },
-    "/Users/brimigs/Documents/solana/journal/node_modules/next/dist/esm/shared/lib/server-inserted-html.js#useServerInsertedHTML": {
+    "/Users/brimigs/Documents/solana/solana-journal/node_modules/next/dist/esm/shared/lib/server-inserted-html.js#useServerInsertedHTML": {
       "id": "(app-client)/../node_modules/next/dist/shared/lib/server-inserted-html.js",
       "name": "useServerInsertedHTML",
       "chunks": [
@@ -1310,7 +1368,7 @@ self.__RSC_MANIFEST={
       ],
       "async": false
     },
-    "/Users/brimigs/Documents/solana/journal/node_modules/next/dist/client/components/layout-router.js": {
+    "/Users/brimigs/Documents/solana/solana-journal/node_modules/next/dist/client/components/layout-router.js": {
       "id": "(app-client)/../node_modules/next/dist/client/components/layout-router.js",
       "name": "*",
       "chunks": [
@@ -1318,7 +1376,7 @@ self.__RSC_MANIFEST={
       ],
       "async": false
     },
-    "/Users/brimigs/Documents/solana/journal/node_modules/next/dist/esm/client/components/layout-router.js": {
+    "/Users/brimigs/Documents/solana/solana-journal/node_modules/next/dist/esm/client/components/layout-router.js": {
       "id": "(app-client)/../node_modules/next/dist/client/components/layout-router.js",
       "name": "*",
       "chunks": [
@@ -1326,7 +1384,7 @@ self.__RSC_MANIFEST={
       ],
       "async": false
     },
-    "/Users/brimigs/Documents/solana/journal/node_modules/next/dist/client/components/layout-router.js#": {
+    "/Users/brimigs/Documents/solana/solana-journal/node_modules/next/dist/client/components/layout-router.js#": {
       "id": "(app-client)/../node_modules/next/dist/client/components/layout-router.js",
       "name": "",
       "chunks": [
@@ -1334,7 +1392,7 @@ self.__RSC_MANIFEST={
       ],
       "async": false
     },
-    "/Users/brimigs/Documents/solana/journal/node_modules/next/dist/esm/client/components/layout-router.js#": {
+    "/Users/brimigs/Documents/solana/solana-journal/node_modules/next/dist/esm/client/components/layout-router.js#": {
       "id": "(app-client)/../node_modules/next/dist/client/components/layout-router.js",
       "name": "",
       "chunks": [
@@ -1342,7 +1400,7 @@ self.__RSC_MANIFEST={
       ],
       "async": false
     },
-    "/Users/brimigs/Documents/solana/journal/node_modules/next/dist/client/components/layout-router.js#default": {
+    "/Users/brimigs/Documents/solana/solana-journal/node_modules/next/dist/client/components/layout-router.js#default": {
       "id": "(app-client)/../node_modules/next/dist/client/components/layout-router.js",
       "name": "default",
       "chunks": [
@@ -1350,7 +1408,7 @@ self.__RSC_MANIFEST={
       ],
       "async": false
     },
-    "/Users/brimigs/Documents/solana/journal/node_modules/next/dist/esm/client/components/layout-router.js#default": {
+    "/Users/brimigs/Documents/solana/solana-journal/node_modules/next/dist/esm/client/components/layout-router.js#default": {
       "id": "(app-client)/../node_modules/next/dist/client/components/layout-router.js",
       "name": "default",
       "chunks": [
@@ -1358,7 +1416,7 @@ self.__RSC_MANIFEST={
       ],
       "async": false
     },
-    "/Users/brimigs/Documents/solana/journal/node_modules/next/dist/client/components/render-from-template-context.js": {
+    "/Users/brimigs/Documents/solana/solana-journal/node_modules/next/dist/client/components/render-from-template-context.js": {
       "id": "(app-client)/../node_modules/next/dist/client/components/render-from-template-context.js",
       "name": "*",
       "chunks": [
@@ -1366,7 +1424,7 @@ self.__RSC_MANIFEST={
       ],
       "async": false
     },
-    "/Users/brimigs/Documents/solana/journal/node_modules/next/dist/esm/client/components/render-from-template-context.js": {
+    "/Users/brimigs/Documents/solana/solana-journal/node_modules/next/dist/esm/client/components/render-from-template-context.js": {
       "id": "(app-client)/../node_modules/next/dist/client/components/render-from-template-context.js",
       "name": "*",
       "chunks": [
@@ -1374,7 +1432,7 @@ self.__RSC_MANIFEST={
       ],
       "async": false
     },
-    "/Users/brimigs/Documents/solana/journal/node_modules/next/dist/client/components/render-from-template-context.js#": {
+    "/Users/brimigs/Documents/solana/solana-journal/node_modules/next/dist/client/components/render-from-template-context.js#": {
       "id": "(app-client)/../node_modules/next/dist/client/components/render-from-template-context.js",
       "name": "",
       "chunks": [
@@ -1382,7 +1440,7 @@ self.__RSC_MANIFEST={
       ],
       "async": false
     },
-    "/Users/brimigs/Documents/solana/journal/node_modules/next/dist/esm/client/components/render-from-template-context.js#": {
+    "/Users/brimigs/Documents/solana/solana-journal/node_modules/next/dist/esm/client/components/render-from-template-context.js#": {
       "id": "(app-client)/../node_modules/next/dist/client/components/render-from-template-context.js",
       "name": "",
       "chunks": [
@@ -1390,7 +1448,7 @@ self.__RSC_MANIFEST={
       ],
       "async": false
     },
-    "/Users/brimigs/Documents/solana/journal/node_modules/next/dist/client/components/render-from-template-context.js#default": {
+    "/Users/brimigs/Documents/solana/solana-journal/node_modules/next/dist/client/components/render-from-template-context.js#default": {
       "id": "(app-client)/../node_modules/next/dist/client/components/render-from-template-context.js",
       "name": "default",
       "chunks": [
@@ -1398,7 +1456,7 @@ self.__RSC_MANIFEST={
       ],
       "async": false
     },
-    "/Users/brimigs/Documents/solana/journal/node_modules/next/dist/esm/client/components/render-from-template-context.js#default": {
+    "/Users/brimigs/Documents/solana/solana-journal/node_modules/next/dist/esm/client/components/render-from-template-context.js#default": {
       "id": "(app-client)/../node_modules/next/dist/client/components/render-from-template-context.js",
       "name": "default",
       "chunks": [
@@ -1406,7 +1464,7 @@ self.__RSC_MANIFEST={
       ],
       "async": false
     },
-    "/Users/brimigs/Documents/solana/journal/node_modules/next/dist/client/components/static-generation-searchparams-bailout-provider.js": {
+    "/Users/brimigs/Documents/solana/solana-journal/node_modules/next/dist/client/components/static-generation-searchparams-bailout-provider.js": {
       "id": "(app-client)/../node_modules/next/dist/client/components/static-generation-searchparams-bailout-provider.js",
       "name": "*",
       "chunks": [
@@ -1414,7 +1472,7 @@ self.__RSC_MANIFEST={
       ],
       "async": false
     },
-    "/Users/brimigs/Documents/solana/journal/node_modules/next/dist/esm/client/components/static-generation-searchparams-bailout-provider.js": {
+    "/Users/brimigs/Documents/solana/solana-journal/node_modules/next/dist/esm/client/components/static-generation-searchparams-bailout-provider.js": {
       "id": "(app-client)/../node_modules/next/dist/client/components/static-generation-searchparams-bailout-provider.js",
       "name": "*",
       "chunks": [
@@ -1422,7 +1480,7 @@ self.__RSC_MANIFEST={
       ],
       "async": false
     },
-    "/Users/brimigs/Documents/solana/journal/node_modules/next/dist/client/components/static-generation-searchparams-bailout-provider.js#": {
+    "/Users/brimigs/Documents/solana/solana-journal/node_modules/next/dist/client/components/static-generation-searchparams-bailout-provider.js#": {
       "id": "(app-client)/../node_modules/next/dist/client/components/static-generation-searchparams-bailout-provider.js",
       "name": "",
       "chunks": [
@@ -1430,7 +1488,7 @@ self.__RSC_MANIFEST={
       ],
       "async": false
     },
-    "/Users/brimigs/Documents/solana/journal/node_modules/next/dist/esm/client/components/static-generation-searchparams-bailout-provider.js#": {
+    "/Users/brimigs/Documents/solana/solana-journal/node_modules/next/dist/esm/client/components/static-generation-searchparams-bailout-provider.js#": {
       "id": "(app-client)/../node_modules/next/dist/client/components/static-generation-searchparams-bailout-provider.js",
       "name": "",
       "chunks": [
@@ -1438,7 +1496,7 @@ self.__RSC_MANIFEST={
       ],
       "async": false
     },
-    "/Users/brimigs/Documents/solana/journal/node_modules/next/dist/client/components/static-generation-searchparams-bailout-provider.js#default": {
+    "/Users/brimigs/Documents/solana/solana-journal/node_modules/next/dist/client/components/static-generation-searchparams-bailout-provider.js#default": {
       "id": "(app-client)/../node_modules/next/dist/client/components/static-generation-searchparams-bailout-provider.js",
       "name": "default",
       "chunks": [
@@ -1446,7 +1504,7 @@ self.__RSC_MANIFEST={
       ],
       "async": false
     },
-    "/Users/brimigs/Documents/solana/journal/node_modules/next/dist/esm/client/components/static-generation-searchparams-bailout-provider.js#default": {
+    "/Users/brimigs/Documents/solana/solana-journal/node_modules/next/dist/esm/client/components/static-generation-searchparams-bailout-provider.js#default": {
       "id": "(app-client)/../node_modules/next/dist/client/components/static-generation-searchparams-bailout-provider.js",
       "name": "default",
       "chunks": [
@@ -1454,16 +1512,18 @@ self.__RSC_MANIFEST={
       ],
       "async": false
     },
-    "/Users/brimigs/Documents/solana/journal/node_modules/@solana/wallet-adapter-react-ui/styles.css#": {
+    "/Users/brimigs/Documents/solana/solana-journal/node_modules/@solana/wallet-adapter-react-ui/styles.css#": {
       "id": "null",
       "name": "default",
       "chunks": [
         "static/css/app/page.css",
         "static/css/app/layout.css",
-        "static/css/app/journal/page.css"
+        "static/css/app/clusters/page.css",
+        "static/css/app/journal/page.css",
+        "static/css/app/account/page.css"
       ]
     },
-    "/Users/brimigs/Documents/solana/journal/node_modules/next/dist/client/link.js": {
+    "/Users/brimigs/Documents/solana/solana-journal/node_modules/next/dist/client/link.js": {
       "id": "(app-client)/../node_modules/next/dist/client/link.js",
       "name": "*",
       "chunks": [
@@ -1471,7 +1531,7 @@ self.__RSC_MANIFEST={
       ],
       "async": false
     },
-    "/Users/brimigs/Documents/solana/journal/node_modules/next/dist/esm/client/link.js": {
+    "/Users/brimigs/Documents/solana/solana-journal/node_modules/next/dist/esm/client/link.js": {
       "id": "(app-client)/../node_modules/next/dist/client/link.js",
       "name": "*",
       "chunks": [
@@ -1479,7 +1539,7 @@ self.__RSC_MANIFEST={
       ],
       "async": false
     },
-    "/Users/brimigs/Documents/solana/journal/node_modules/next/dist/client/link.js#": {
+    "/Users/brimigs/Documents/solana/solana-journal/node_modules/next/dist/client/link.js#": {
       "id": "(app-client)/../node_modules/next/dist/client/link.js",
       "name": "",
       "chunks": [
@@ -1487,7 +1547,7 @@ self.__RSC_MANIFEST={
       ],
       "async": false
     },
-    "/Users/brimigs/Documents/solana/journal/node_modules/next/dist/esm/client/link.js#": {
+    "/Users/brimigs/Documents/solana/solana-journal/node_modules/next/dist/esm/client/link.js#": {
       "id": "(app-client)/../node_modules/next/dist/client/link.js",
       "name": "",
       "chunks": [
@@ -1495,7 +1555,7 @@ self.__RSC_MANIFEST={
       ],
       "async": false
     },
-    "/Users/brimigs/Documents/solana/journal/node_modules/next/dist/client/link.js#default": {
+    "/Users/brimigs/Documents/solana/solana-journal/node_modules/next/dist/client/link.js#default": {
       "id": "(app-client)/../node_modules/next/dist/client/link.js",
       "name": "default",
       "chunks": [
@@ -1503,7 +1563,7 @@ self.__RSC_MANIFEST={
       ],
       "async": false
     },
-    "/Users/brimigs/Documents/solana/journal/node_modules/next/dist/esm/client/link.js#default": {
+    "/Users/brimigs/Documents/solana/solana-journal/node_modules/next/dist/esm/client/link.js#default": {
       "id": "(app-client)/../node_modules/next/dist/client/link.js",
       "name": "default",
       "chunks": [
@@ -1511,71 +1571,71 @@ self.__RSC_MANIFEST={
       ],
       "async": false
     },
-    "/Users/brimigs/Documents/solana/journal/node_modules/next/dist/shared/lib/lazy-dynamic/dynamic-no-ssr.js": {
+    "/Users/brimigs/Documents/solana/solana-journal/node_modules/next/dist/shared/lib/lazy-dynamic/dynamic-no-ssr.js": {
       "id": "(app-client)/../node_modules/next/dist/shared/lib/lazy-dynamic/dynamic-no-ssr.js",
       "name": "*",
       "chunks": [
-        "app/journal/page:static/chunks/app/journal/page.js"
+        "app/account/page:static/chunks/app/account/page.js"
       ],
       "async": false
     },
-    "/Users/brimigs/Documents/solana/journal/node_modules/next/dist/esm/shared/lib/lazy-dynamic/dynamic-no-ssr.js": {
+    "/Users/brimigs/Documents/solana/solana-journal/node_modules/next/dist/esm/shared/lib/lazy-dynamic/dynamic-no-ssr.js": {
       "id": "(app-client)/../node_modules/next/dist/shared/lib/lazy-dynamic/dynamic-no-ssr.js",
       "name": "*",
       "chunks": [
-        "app/journal/page:static/chunks/app/journal/page.js"
+        "app/account/page:static/chunks/app/account/page.js"
       ],
       "async": false
     },
-    "/Users/brimigs/Documents/solana/journal/node_modules/next/dist/shared/lib/lazy-dynamic/dynamic-no-ssr.js#": {
+    "/Users/brimigs/Documents/solana/solana-journal/node_modules/next/dist/shared/lib/lazy-dynamic/dynamic-no-ssr.js#": {
       "id": "(app-client)/../node_modules/next/dist/shared/lib/lazy-dynamic/dynamic-no-ssr.js",
       "name": "",
       "chunks": [
-        "app/journal/page:static/chunks/app/journal/page.js"
+        "app/account/page:static/chunks/app/account/page.js"
       ],
       "async": false
     },
-    "/Users/brimigs/Documents/solana/journal/node_modules/next/dist/esm/shared/lib/lazy-dynamic/dynamic-no-ssr.js#": {
+    "/Users/brimigs/Documents/solana/solana-journal/node_modules/next/dist/esm/shared/lib/lazy-dynamic/dynamic-no-ssr.js#": {
       "id": "(app-client)/../node_modules/next/dist/shared/lib/lazy-dynamic/dynamic-no-ssr.js",
       "name": "",
       "chunks": [
-        "app/journal/page:static/chunks/app/journal/page.js"
+        "app/account/page:static/chunks/app/account/page.js"
       ],
       "async": false
     },
-    "/Users/brimigs/Documents/solana/journal/node_modules/next/dist/shared/lib/lazy-dynamic/dynamic-no-ssr.js#suspense": {
+    "/Users/brimigs/Documents/solana/solana-journal/node_modules/next/dist/shared/lib/lazy-dynamic/dynamic-no-ssr.js#suspense": {
       "id": "(app-client)/../node_modules/next/dist/shared/lib/lazy-dynamic/dynamic-no-ssr.js",
       "name": "suspense",
       "chunks": [
-        "app/journal/page:static/chunks/app/journal/page.js"
+        "app/account/page:static/chunks/app/account/page.js"
       ],
       "async": false
     },
-    "/Users/brimigs/Documents/solana/journal/node_modules/next/dist/esm/shared/lib/lazy-dynamic/dynamic-no-ssr.js#suspense": {
+    "/Users/brimigs/Documents/solana/solana-journal/node_modules/next/dist/esm/shared/lib/lazy-dynamic/dynamic-no-ssr.js#suspense": {
       "id": "(app-client)/../node_modules/next/dist/shared/lib/lazy-dynamic/dynamic-no-ssr.js",
       "name": "suspense",
       "chunks": [
-        "app/journal/page:static/chunks/app/journal/page.js"
+        "app/account/page:static/chunks/app/account/page.js"
       ],
       "async": false
     },
-    "/Users/brimigs/Documents/solana/journal/node_modules/next/dist/shared/lib/lazy-dynamic/dynamic-no-ssr.js#NoSSR": {
+    "/Users/brimigs/Documents/solana/solana-journal/node_modules/next/dist/shared/lib/lazy-dynamic/dynamic-no-ssr.js#NoSSR": {
       "id": "(app-client)/../node_modules/next/dist/shared/lib/lazy-dynamic/dynamic-no-ssr.js",
       "name": "NoSSR",
       "chunks": [
-        "app/journal/page:static/chunks/app/journal/page.js"
+        "app/account/page:static/chunks/app/account/page.js"
       ],
       "async": false
     },
-    "/Users/brimigs/Documents/solana/journal/node_modules/next/dist/esm/shared/lib/lazy-dynamic/dynamic-no-ssr.js#NoSSR": {
+    "/Users/brimigs/Documents/solana/solana-journal/node_modules/next/dist/esm/shared/lib/lazy-dynamic/dynamic-no-ssr.js#NoSSR": {
       "id": "(app-client)/../node_modules/next/dist/shared/lib/lazy-dynamic/dynamic-no-ssr.js",
       "name": "NoSSR",
       "chunks": [
-        "app/journal/page:static/chunks/app/journal/page.js"
+        "app/account/page:static/chunks/app/account/page.js"
       ],
       "async": false
     },
-    "/Users/brimigs/Documents/solana/journal/web/components/account/account-data-access.tsx": {
+    "/Users/brimigs/Documents/solana/solana-journal/web/components/account/account-data-access.tsx": {
       "id": "(app-client)/./components/account/account-data-access.tsx",
       "name": "*",
       "chunks": [
@@ -1583,7 +1643,7 @@ self.__RSC_MANIFEST={
       ],
       "async": false
     },
-    "/Users/brimigs/Documents/solana/journal/web/components/account/account-data-access.tsx#": {
+    "/Users/brimigs/Documents/solana/solana-journal/web/components/account/account-data-access.tsx#": {
       "id": "(app-client)/./components/account/account-data-access.tsx",
       "name": "",
       "chunks": [
@@ -1591,7 +1651,7 @@ self.__RSC_MANIFEST={
       ],
       "async": false
     },
-    "/Users/brimigs/Documents/solana/journal/web/components/account/account-data-access.tsx#useGetBalance": {
+    "/Users/brimigs/Documents/solana/solana-journal/web/components/account/account-data-access.tsx#useGetBalance": {
       "id": "(app-client)/./components/account/account-data-access.tsx",
       "name": "useGetBalance",
       "chunks": [
@@ -1599,7 +1659,7 @@ self.__RSC_MANIFEST={
       ],
       "async": false
     },
-    "/Users/brimigs/Documents/solana/journal/web/components/account/account-data-access.tsx#useGetSignatures": {
+    "/Users/brimigs/Documents/solana/solana-journal/web/components/account/account-data-access.tsx#useGetSignatures": {
       "id": "(app-client)/./components/account/account-data-access.tsx",
       "name": "useGetSignatures",
       "chunks": [
@@ -1607,7 +1667,7 @@ self.__RSC_MANIFEST={
       ],
       "async": false
     },
-    "/Users/brimigs/Documents/solana/journal/web/components/account/account-data-access.tsx#useGetTokenAccounts": {
+    "/Users/brimigs/Documents/solana/solana-journal/web/components/account/account-data-access.tsx#useGetTokenAccounts": {
       "id": "(app-client)/./components/account/account-data-access.tsx",
       "name": "useGetTokenAccounts",
       "chunks": [
@@ -1615,7 +1675,7 @@ self.__RSC_MANIFEST={
       ],
       "async": false
     },
-    "/Users/brimigs/Documents/solana/journal/web/components/account/account-data-access.tsx#useRequestAirdrop": {
+    "/Users/brimigs/Documents/solana/solana-journal/web/components/account/account-data-access.tsx#useRequestAirdrop": {
       "id": "(app-client)/./components/account/account-data-access.tsx",
       "name": "useRequestAirdrop",
       "chunks": [
@@ -1623,7 +1683,7 @@ self.__RSC_MANIFEST={
       ],
       "async": false
     },
-    "/Users/brimigs/Documents/solana/journal/web/components/account/account-data-access.tsx#useTransferSol": {
+    "/Users/brimigs/Documents/solana/solana-journal/web/components/account/account-data-access.tsx#useTransferSol": {
       "id": "(app-client)/./components/account/account-data-access.tsx",
       "name": "useTransferSol",
       "chunks": [
@@ -1631,7 +1691,7 @@ self.__RSC_MANIFEST={
       ],
       "async": false
     },
-    "/Users/brimigs/Documents/solana/journal/web/components/account/account-ui.tsx": {
+    "/Users/brimigs/Documents/solana/solana-journal/web/components/account/account-ui.tsx": {
       "id": "(app-client)/./components/account/account-ui.tsx",
       "name": "*",
       "chunks": [
@@ -1639,7 +1699,7 @@ self.__RSC_MANIFEST={
       ],
       "async": false
     },
-    "/Users/brimigs/Documents/solana/journal/web/components/account/account-ui.tsx#": {
+    "/Users/brimigs/Documents/solana/solana-journal/web/components/account/account-ui.tsx#": {
       "id": "(app-client)/./components/account/account-ui.tsx",
       "name": "",
       "chunks": [
@@ -1647,7 +1707,7 @@ self.__RSC_MANIFEST={
       ],
       "async": false
     },
-    "/Users/brimigs/Documents/solana/journal/web/components/account/account-ui.tsx#AccountBalance": {
+    "/Users/brimigs/Documents/solana/solana-journal/web/components/account/account-ui.tsx#AccountBalance": {
       "id": "(app-client)/./components/account/account-ui.tsx",
       "name": "AccountBalance",
       "chunks": [
@@ -1655,7 +1715,7 @@ self.__RSC_MANIFEST={
       ],
       "async": false
     },
-    "/Users/brimigs/Documents/solana/journal/web/components/account/account-ui.tsx#AccountBalanceCheck": {
+    "/Users/brimigs/Documents/solana/solana-journal/web/components/account/account-ui.tsx#AccountBalanceCheck": {
       "id": "(app-client)/./components/account/account-ui.tsx",
       "name": "AccountBalanceCheck",
       "chunks": [
@@ -1663,7 +1723,7 @@ self.__RSC_MANIFEST={
       ],
       "async": false
     },
-    "/Users/brimigs/Documents/solana/journal/web/components/account/account-ui.tsx#AccountButtons": {
+    "/Users/brimigs/Documents/solana/solana-journal/web/components/account/account-ui.tsx#AccountButtons": {
       "id": "(app-client)/./components/account/account-ui.tsx",
       "name": "AccountButtons",
       "chunks": [
@@ -1671,7 +1731,7 @@ self.__RSC_MANIFEST={
       ],
       "async": false
     },
-    "/Users/brimigs/Documents/solana/journal/web/components/account/account-ui.tsx#AccountChecker": {
+    "/Users/brimigs/Documents/solana/solana-journal/web/components/account/account-ui.tsx#AccountChecker": {
       "id": "(app-client)/./components/account/account-ui.tsx",
       "name": "AccountChecker",
       "chunks": [
@@ -1679,7 +1739,7 @@ self.__RSC_MANIFEST={
       ],
       "async": false
     },
-    "/Users/brimigs/Documents/solana/journal/web/components/account/account-ui.tsx#AccountTokens": {
+    "/Users/brimigs/Documents/solana/solana-journal/web/components/account/account-ui.tsx#AccountTokens": {
       "id": "(app-client)/./components/account/account-ui.tsx",
       "name": "AccountTokens",
       "chunks": [
@@ -1687,7 +1747,7 @@ self.__RSC_MANIFEST={
       ],
       "async": false
     },
-    "/Users/brimigs/Documents/solana/journal/web/components/account/account-ui.tsx#AccountTransactions": {
+    "/Users/brimigs/Documents/solana/solana-journal/web/components/account/account-ui.tsx#AccountTransactions": {
       "id": "(app-client)/./components/account/account-ui.tsx",
       "name": "AccountTransactions",
       "chunks": [
@@ -1695,55 +1755,55 @@ self.__RSC_MANIFEST={
       ],
       "async": false
     },
-    "/Users/brimigs/Documents/solana/journal/web/components/cluster/cluster-data-access.tsx": {
+    "/Users/brimigs/Documents/solana/solana-journal/web/components/cluster/cluster-data-access.tsx": {
       "id": "(app-client)/./components/cluster/cluster-data-access.tsx",
       "name": "*",
       "chunks": [
-        "app/journal/page:static/chunks/app/journal/page.js"
+        "app/account/page:static/chunks/app/account/page.js"
       ],
       "async": false
     },
-    "/Users/brimigs/Documents/solana/journal/web/components/cluster/cluster-data-access.tsx#": {
+    "/Users/brimigs/Documents/solana/solana-journal/web/components/cluster/cluster-data-access.tsx#": {
       "id": "(app-client)/./components/cluster/cluster-data-access.tsx",
       "name": "",
       "chunks": [
-        "app/journal/page:static/chunks/app/journal/page.js"
+        "app/account/page:static/chunks/app/account/page.js"
       ],
       "async": false
     },
-    "/Users/brimigs/Documents/solana/journal/web/components/cluster/cluster-data-access.tsx#ClusterNetwork": {
+    "/Users/brimigs/Documents/solana/solana-journal/web/components/cluster/cluster-data-access.tsx#ClusterNetwork": {
       "id": "(app-client)/./components/cluster/cluster-data-access.tsx",
       "name": "ClusterNetwork",
       "chunks": [
-        "app/journal/page:static/chunks/app/journal/page.js"
+        "app/account/page:static/chunks/app/account/page.js"
       ],
       "async": false
     },
-    "/Users/brimigs/Documents/solana/journal/web/components/cluster/cluster-data-access.tsx#ClusterProvider": {
+    "/Users/brimigs/Documents/solana/solana-journal/web/components/cluster/cluster-data-access.tsx#ClusterProvider": {
       "id": "(app-client)/./components/cluster/cluster-data-access.tsx",
       "name": "ClusterProvider",
       "chunks": [
-        "app/journal/page:static/chunks/app/journal/page.js"
+        "app/account/page:static/chunks/app/account/page.js"
       ],
       "async": false
     },
-    "/Users/brimigs/Documents/solana/journal/web/components/cluster/cluster-data-access.tsx#defaultClusters": {
+    "/Users/brimigs/Documents/solana/solana-journal/web/components/cluster/cluster-data-access.tsx#defaultClusters": {
       "id": "(app-client)/./components/cluster/cluster-data-access.tsx",
       "name": "defaultClusters",
       "chunks": [
-        "app/journal/page:static/chunks/app/journal/page.js"
+        "app/account/page:static/chunks/app/account/page.js"
       ],
       "async": false
     },
-    "/Users/brimigs/Documents/solana/journal/web/components/cluster/cluster-data-access.tsx#useCluster": {
+    "/Users/brimigs/Documents/solana/solana-journal/web/components/cluster/cluster-data-access.tsx#useCluster": {
       "id": "(app-client)/./components/cluster/cluster-data-access.tsx",
       "name": "useCluster",
       "chunks": [
-        "app/journal/page:static/chunks/app/journal/page.js"
+        "app/account/page:static/chunks/app/account/page.js"
       ],
       "async": false
     },
-    "/Users/brimigs/Documents/solana/journal/web/components/cluster/cluster-ui.tsx": {
+    "/Users/brimigs/Documents/solana/solana-journal/web/components/cluster/cluster-ui.tsx": {
       "id": "(app-client)/./components/cluster/cluster-ui.tsx",
       "name": "*",
       "chunks": [
@@ -1751,7 +1811,7 @@ self.__RSC_MANIFEST={
       ],
       "async": false
     },
-    "/Users/brimigs/Documents/solana/journal/web/components/cluster/cluster-ui.tsx#": {
+    "/Users/brimigs/Documents/solana/solana-journal/web/components/cluster/cluster-ui.tsx#": {
       "id": "(app-client)/./components/cluster/cluster-ui.tsx",
       "name": "",
       "chunks": [
@@ -1759,7 +1819,7 @@ self.__RSC_MANIFEST={
       ],
       "async": false
     },
-    "/Users/brimigs/Documents/solana/journal/web/components/cluster/cluster-ui.tsx#ClusterChecker": {
+    "/Users/brimigs/Documents/solana/solana-journal/web/components/cluster/cluster-ui.tsx#ClusterChecker": {
       "id": "(app-client)/./components/cluster/cluster-ui.tsx",
       "name": "ClusterChecker",
       "chunks": [
@@ -1767,7 +1827,7 @@ self.__RSC_MANIFEST={
       ],
       "async": false
     },
-    "/Users/brimigs/Documents/solana/journal/web/components/cluster/cluster-ui.tsx#ClusterUiModal": {
+    "/Users/brimigs/Documents/solana/solana-journal/web/components/cluster/cluster-ui.tsx#ClusterUiModal": {
       "id": "(app-client)/./components/cluster/cluster-ui.tsx",
       "name": "ClusterUiModal",
       "chunks": [
@@ -1775,7 +1835,7 @@ self.__RSC_MANIFEST={
       ],
       "async": false
     },
-    "/Users/brimigs/Documents/solana/journal/web/components/cluster/cluster-ui.tsx#ClusterUiSelect": {
+    "/Users/brimigs/Documents/solana/solana-journal/web/components/cluster/cluster-ui.tsx#ClusterUiSelect": {
       "id": "(app-client)/./components/cluster/cluster-ui.tsx",
       "name": "ClusterUiSelect",
       "chunks": [
@@ -1783,7 +1843,7 @@ self.__RSC_MANIFEST={
       ],
       "async": false
     },
-    "/Users/brimigs/Documents/solana/journal/web/components/cluster/cluster-ui.tsx#ClusterUiTable": {
+    "/Users/brimigs/Documents/solana/solana-journal/web/components/cluster/cluster-ui.tsx#ClusterUiTable": {
       "id": "(app-client)/./components/cluster/cluster-ui.tsx",
       "name": "ClusterUiTable",
       "chunks": [
@@ -1791,7 +1851,7 @@ self.__RSC_MANIFEST={
       ],
       "async": false
     },
-    "/Users/brimigs/Documents/solana/journal/web/components/cluster/cluster-ui.tsx#ExplorerLink": {
+    "/Users/brimigs/Documents/solana/solana-journal/web/components/cluster/cluster-ui.tsx#ExplorerLink": {
       "id": "(app-client)/./components/cluster/cluster-ui.tsx",
       "name": "ExplorerLink",
       "chunks": [
@@ -1799,7 +1859,7 @@ self.__RSC_MANIFEST={
       ],
       "async": false
     },
-    "/Users/brimigs/Documents/solana/journal/web/components/dashboard/dashboard-feature.tsx": {
+    "/Users/brimigs/Documents/solana/solana-journal/web/components/dashboard/dashboard-feature.tsx": {
       "id": "(app-client)/./components/dashboard/dashboard-feature.tsx",
       "name": "*",
       "chunks": [
@@ -1807,7 +1867,7 @@ self.__RSC_MANIFEST={
       ],
       "async": false
     },
-    "/Users/brimigs/Documents/solana/journal/web/components/dashboard/dashboard-feature.tsx#": {
+    "/Users/brimigs/Documents/solana/solana-journal/web/components/dashboard/dashboard-feature.tsx#": {
       "id": "(app-client)/./components/dashboard/dashboard-feature.tsx",
       "name": "",
       "chunks": [
@@ -1815,7 +1875,7 @@ self.__RSC_MANIFEST={
       ],
       "async": false
     },
-    "/Users/brimigs/Documents/solana/journal/web/components/dashboard/dashboard-feature.tsx#default": {
+    "/Users/brimigs/Documents/solana/solana-journal/web/components/dashboard/dashboard-feature.tsx#default": {
       "id": "(app-client)/./components/dashboard/dashboard-feature.tsx",
       "name": "default",
       "chunks": [
@@ -1823,47 +1883,47 @@ self.__RSC_MANIFEST={
       ],
       "async": false
     },
-    "/Users/brimigs/Documents/solana/journal/web/components/solana/solana-provider.tsx": {
+    "/Users/brimigs/Documents/solana/solana-journal/web/components/solana/solana-provider.tsx": {
       "id": "(app-client)/./components/solana/solana-provider.tsx",
       "name": "*",
       "chunks": [
-        "app/journal/page:static/chunks/app/journal/page.js"
+        "app/account/page:static/chunks/app/account/page.js"
       ],
       "async": false
     },
-    "/Users/brimigs/Documents/solana/journal/web/components/solana/solana-provider.tsx#": {
+    "/Users/brimigs/Documents/solana/solana-journal/web/components/solana/solana-provider.tsx#": {
       "id": "(app-client)/./components/solana/solana-provider.tsx",
       "name": "",
       "chunks": [
-        "app/journal/page:static/chunks/app/journal/page.js"
+        "app/account/page:static/chunks/app/account/page.js"
       ],
       "async": false
     },
-    "/Users/brimigs/Documents/solana/journal/web/components/solana/solana-provider.tsx#SolanaProvider": {
+    "/Users/brimigs/Documents/solana/solana-journal/web/components/solana/solana-provider.tsx#SolanaProvider": {
       "id": "(app-client)/./components/solana/solana-provider.tsx",
       "name": "SolanaProvider",
       "chunks": [
-        "app/journal/page:static/chunks/app/journal/page.js"
+        "app/account/page:static/chunks/app/account/page.js"
       ],
       "async": false
     },
-    "/Users/brimigs/Documents/solana/journal/web/components/solana/solana-provider.tsx#WalletButton": {
+    "/Users/brimigs/Documents/solana/solana-journal/web/components/solana/solana-provider.tsx#WalletButton": {
       "id": "(app-client)/./components/solana/solana-provider.tsx",
       "name": "WalletButton",
       "chunks": [
-        "app/journal/page:static/chunks/app/journal/page.js"
+        "app/account/page:static/chunks/app/account/page.js"
       ],
       "async": false
     },
-    "/Users/brimigs/Documents/solana/journal/web/components/solana/solana-provider.tsx#useAnchorProvider": {
+    "/Users/brimigs/Documents/solana/solana-journal/web/components/solana/solana-provider.tsx#useAnchorProvider": {
       "id": "(app-client)/./components/solana/solana-provider.tsx",
       "name": "useAnchorProvider",
       "chunks": [
-        "app/journal/page:static/chunks/app/journal/page.js"
+        "app/account/page:static/chunks/app/account/page.js"
       ],
       "async": false
     },
-    "/Users/brimigs/Documents/solana/journal/web/components/ui/ui-layout.tsx": {
+    "/Users/brimigs/Documents/solana/solana-journal/web/components/ui/ui-layout.tsx": {
       "id": "(app-client)/./components/ui/ui-layout.tsx",
       "name": "*",
       "chunks": [
@@ -1871,7 +1931,7 @@ self.__RSC_MANIFEST={
       ],
       "async": false
     },
-    "/Users/brimigs/Documents/solana/journal/web/components/ui/ui-layout.tsx#": {
+    "/Users/brimigs/Documents/solana/solana-journal/web/components/ui/ui-layout.tsx#": {
       "id": "(app-client)/./components/ui/ui-layout.tsx",
       "name": "",
       "chunks": [
@@ -1879,7 +1939,7 @@ self.__RSC_MANIFEST={
       ],
       "async": false
     },
-    "/Users/brimigs/Documents/solana/journal/web/components/ui/ui-layout.tsx#AppHero": {
+    "/Users/brimigs/Documents/solana/solana-journal/web/components/ui/ui-layout.tsx#AppHero": {
       "id": "(app-client)/./components/ui/ui-layout.tsx",
       "name": "AppHero",
       "chunks": [
@@ -1887,7 +1947,7 @@ self.__RSC_MANIFEST={
       ],
       "async": false
     },
-    "/Users/brimigs/Documents/solana/journal/web/components/ui/ui-layout.tsx#AppModal": {
+    "/Users/brimigs/Documents/solana/solana-journal/web/components/ui/ui-layout.tsx#AppModal": {
       "id": "(app-client)/./components/ui/ui-layout.tsx",
       "name": "AppModal",
       "chunks": [
@@ -1895,7 +1955,7 @@ self.__RSC_MANIFEST={
       ],
       "async": false
     },
-    "/Users/brimigs/Documents/solana/journal/web/components/ui/ui-layout.tsx#UiLayout": {
+    "/Users/brimigs/Documents/solana/solana-journal/web/components/ui/ui-layout.tsx#UiLayout": {
       "id": "(app-client)/./components/ui/ui-layout.tsx",
       "name": "UiLayout",
       "chunks": [
@@ -1903,7 +1963,7 @@ self.__RSC_MANIFEST={
       ],
       "async": false
     },
-    "/Users/brimigs/Documents/solana/journal/web/components/ui/ui-layout.tsx#ellipsify": {
+    "/Users/brimigs/Documents/solana/solana-journal/web/components/ui/ui-layout.tsx#ellipsify": {
       "id": "(app-client)/./components/ui/ui-layout.tsx",
       "name": "ellipsify",
       "chunks": [
@@ -1911,7 +1971,7 @@ self.__RSC_MANIFEST={
       ],
       "async": false
     },
-    "/Users/brimigs/Documents/solana/journal/web/components/ui/ui-layout.tsx#useTransactionToast": {
+    "/Users/brimigs/Documents/solana/solana-journal/web/components/ui/ui-layout.tsx#useTransactionToast": {
       "id": "(app-client)/./components/ui/ui-layout.tsx",
       "name": "useTransactionToast",
       "chunks": [
@@ -1919,14 +1979,14 @@ self.__RSC_MANIFEST={
       ],
       "async": false
     },
-    "/Users/brimigs/Documents/solana/journal/web/app/global.css#": {
+    "/Users/brimigs/Documents/solana/solana-journal/web/app/global.css#": {
       "id": "null",
       "name": "default",
       "chunks": [
         "static/css/app/layout.css"
       ]
     },
-    "/Users/brimigs/Documents/solana/journal/web/app/react-query-provider.tsx": {
+    "/Users/brimigs/Documents/solana/solana-journal/web/app/react-query-provider.tsx": {
       "id": "(app-client)/./app/react-query-provider.tsx",
       "name": "*",
       "chunks": [
@@ -1934,7 +1994,7 @@ self.__RSC_MANIFEST={
       ],
       "async": false
     },
-    "/Users/brimigs/Documents/solana/journal/web/app/react-query-provider.tsx#": {
+    "/Users/brimigs/Documents/solana/solana-journal/web/app/react-query-provider.tsx#": {
       "id": "(app-client)/./app/react-query-provider.tsx",
       "name": "",
       "chunks": [
@@ -1942,7 +2002,7 @@ self.__RSC_MANIFEST={
       ],
       "async": false
     },
-    "/Users/brimigs/Documents/solana/journal/web/app/react-query-provider.tsx#ReactQueryProvider": {
+    "/Users/brimigs/Documents/solana/solana-journal/web/app/react-query-provider.tsx#ReactQueryProvider": {
       "id": "(app-client)/./app/react-query-provider.tsx",
       "name": "ReactQueryProvider",
       "chunks": [
@@ -1950,7 +2010,31 @@ self.__RSC_MANIFEST={
       ],
       "async": false
     },
-    "/Users/brimigs/Documents/solana/journal/web/components/journal/journal-data-access.tsx": {
+    "/Users/brimigs/Documents/solana/solana-journal/web/components/cluster/cluster-feature.tsx": {
+      "id": "(app-client)/./components/cluster/cluster-feature.tsx",
+      "name": "*",
+      "chunks": [
+        "app/clusters/page:static/chunks/app/clusters/page.js"
+      ],
+      "async": false
+    },
+    "/Users/brimigs/Documents/solana/solana-journal/web/components/cluster/cluster-feature.tsx#": {
+      "id": "(app-client)/./components/cluster/cluster-feature.tsx",
+      "name": "",
+      "chunks": [
+        "app/clusters/page:static/chunks/app/clusters/page.js"
+      ],
+      "async": false
+    },
+    "/Users/brimigs/Documents/solana/solana-journal/web/components/cluster/cluster-feature.tsx#default": {
+      "id": "(app-client)/./components/cluster/cluster-feature.tsx",
+      "name": "default",
+      "chunks": [
+        "app/clusters/page:static/chunks/app/clusters/page.js"
+      ],
+      "async": false
+    },
+    "/Users/brimigs/Documents/solana/solana-journal/web/components/journal/journal-data-access.tsx": {
       "id": "(app-client)/./components/journal/journal-data-access.tsx",
       "name": "*",
       "chunks": [
@@ -1958,7 +2042,7 @@ self.__RSC_MANIFEST={
       ],
       "async": false
     },
-    "/Users/brimigs/Documents/solana/journal/web/components/journal/journal-data-access.tsx#": {
+    "/Users/brimigs/Documents/solana/solana-journal/web/components/journal/journal-data-access.tsx#": {
       "id": "(app-client)/./components/journal/journal-data-access.tsx",
       "name": "",
       "chunks": [
@@ -1966,7 +2050,7 @@ self.__RSC_MANIFEST={
       ],
       "async": false
     },
-    "/Users/brimigs/Documents/solana/journal/web/components/journal/journal-data-access.tsx#useJournalProgram": {
+    "/Users/brimigs/Documents/solana/solana-journal/web/components/journal/journal-data-access.tsx#useJournalProgram": {
       "id": "(app-client)/./components/journal/journal-data-access.tsx",
       "name": "useJournalProgram",
       "chunks": [
@@ -1974,7 +2058,7 @@ self.__RSC_MANIFEST={
       ],
       "async": false
     },
-    "/Users/brimigs/Documents/solana/journal/web/components/journal/journal-data-access.tsx#useJournalProgramAccount": {
+    "/Users/brimigs/Documents/solana/solana-journal/web/components/journal/journal-data-access.tsx#useJournalProgramAccount": {
       "id": "(app-client)/./components/journal/journal-data-access.tsx",
       "name": "useJournalProgramAccount",
       "chunks": [
@@ -1982,7 +2066,7 @@ self.__RSC_MANIFEST={
       ],
       "async": false
     },
-    "/Users/brimigs/Documents/solana/journal/web/components/journal/journal-feature.tsx": {
+    "/Users/brimigs/Documents/solana/solana-journal/web/components/journal/journal-feature.tsx": {
       "id": "(app-client)/./components/journal/journal-feature.tsx",
       "name": "*",
       "chunks": [
@@ -1990,7 +2074,7 @@ self.__RSC_MANIFEST={
       ],
       "async": false
     },
-    "/Users/brimigs/Documents/solana/journal/web/components/journal/journal-feature.tsx#": {
+    "/Users/brimigs/Documents/solana/solana-journal/web/components/journal/journal-feature.tsx#": {
       "id": "(app-client)/./components/journal/journal-feature.tsx",
       "name": "",
       "chunks": [
@@ -1998,7 +2082,7 @@ self.__RSC_MANIFEST={
       ],
       "async": false
     },
-    "/Users/brimigs/Documents/solana/journal/web/components/journal/journal-feature.tsx#default": {
+    "/Users/brimigs/Documents/solana/solana-journal/web/components/journal/journal-feature.tsx#default": {
       "id": "(app-client)/./components/journal/journal-feature.tsx",
       "name": "default",
       "chunks": [
@@ -2006,7 +2090,7 @@ self.__RSC_MANIFEST={
       ],
       "async": false
     },
-    "/Users/brimigs/Documents/solana/journal/web/components/journal/journal-ui.tsx": {
+    "/Users/brimigs/Documents/solana/solana-journal/web/components/journal/journal-ui.tsx": {
       "id": "(app-client)/./components/journal/journal-ui.tsx",
       "name": "*",
       "chunks": [
@@ -2014,7 +2098,7 @@ self.__RSC_MANIFEST={
       ],
       "async": false
     },
-    "/Users/brimigs/Documents/solana/journal/web/components/journal/journal-ui.tsx#": {
+    "/Users/brimigs/Documents/solana/solana-journal/web/components/journal/journal-ui.tsx#": {
       "id": "(app-client)/./components/journal/journal-ui.tsx",
       "name": "",
       "chunks": [
@@ -2022,7 +2106,7 @@ self.__RSC_MANIFEST={
       ],
       "async": false
     },
-    "/Users/brimigs/Documents/solana/journal/web/components/journal/journal-ui.tsx#JournalCreate": {
+    "/Users/brimigs/Documents/solana/solana-journal/web/components/journal/journal-ui.tsx#JournalCreate": {
       "id": "(app-client)/./components/journal/journal-ui.tsx",
       "name": "JournalCreate",
       "chunks": [
@@ -2030,11 +2114,35 @@ self.__RSC_MANIFEST={
       ],
       "async": false
     },
-    "/Users/brimigs/Documents/solana/journal/web/components/journal/journal-ui.tsx#JournalList": {
+    "/Users/brimigs/Documents/solana/solana-journal/web/components/journal/journal-ui.tsx#JournalList": {
       "id": "(app-client)/./components/journal/journal-ui.tsx",
       "name": "JournalList",
       "chunks": [
         "app/journal/page:static/chunks/app/journal/page.js"
+      ],
+      "async": false
+    },
+    "/Users/brimigs/Documents/solana/solana-journal/web/components/account/account-list-feature.tsx": {
+      "id": "(app-client)/./components/account/account-list-feature.tsx",
+      "name": "*",
+      "chunks": [
+        "app/account/page:static/chunks/app/account/page.js"
+      ],
+      "async": false
+    },
+    "/Users/brimigs/Documents/solana/solana-journal/web/components/account/account-list-feature.tsx#": {
+      "id": "(app-client)/./components/account/account-list-feature.tsx",
+      "name": "",
+      "chunks": [
+        "app/account/page:static/chunks/app/account/page.js"
+      ],
+      "async": false
+    },
+    "/Users/brimigs/Documents/solana/solana-journal/web/components/account/account-list-feature.tsx#default": {
+      "id": "(app-client)/./components/account/account-list-feature.tsx",
+      "name": "default",
+      "chunks": [
+        "app/account/page:static/chunks/app/account/page.js"
       ],
       "async": false
     }

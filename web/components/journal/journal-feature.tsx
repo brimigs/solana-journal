@@ -14,7 +14,7 @@ export default function JournalFeature() {
   return publicKey ? (
     <div>
       <AppHero
-        title="Journal"
+        title="My Solana Journal"
         subtitle={
           'Create your journal here!'
         }

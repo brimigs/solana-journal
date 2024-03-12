@@ -8,18 +8,51 @@ import {
   useJournalProgram,
   useJournalProgramAccount,
 } from './journal-data-access';
+import { useWallet } from '@solana/wallet-adapter-react';
+import { useState } from 'react';
 
 export function JournalCreate() {
   const { createEntry } = useJournalProgram();
+  const { publicKey } = useWallet();
+  const [title, setTitle] = useState('');
+  const [message, setMessage] = useState('');
+
+  const isFormValid = title.trim() !== '' && message.trim() !== '';
+
+  const handleSubmit = () => {
+    if (publicKey && isFormValid) {
+      createEntry.mutateAsync({ title, message, owner: publicKey });
+    }
+  };
+
+  if (!publicKey){
+    return <p>Connect your wallet</p>
+  }
 
   return (
-    <button
-      className="btn btn-xs lg:btn-md btn-primary"
-      onClick={() => createEntry.mutateAsync(Keypair.generate())}
-      disabled={createEntry.isPending}
-    >
-      Create Journal Entry {createEntry.isPending && '...'}
-    </button>
+    <div>
+      <input
+        type="text"
+        placeholder="Title"
+        value={title}
+        onChange={(e) => setTitle(e.target.value)}
+        className="input input-bordered w-full max-w-xs"
+      />
+      <textarea
+        placeholder="Message"
+        value={message}
+        onChange={(e) => setMessage(e.target.value)}
+        className="textarea textarea-bordered w-full max-w-xs"
+      />
+      <br></br>
+      <button
+        className="btn btn-xs lg:btn-md btn-primary"
+        onClick={handleSubmit}
+        disabled={createEntry.isPending || !isFormValid}
+      >
+        Create Journal Entry {createEntry.isPending && '...'}
+      </button>
+    </div>
   );
 }
 
@@ -32,7 +65,7 @@ export function JournalList() {
   }
   if (!getProgramAccount.data?.value) {
     return (
-      <div className="alert alert-info flex justify-center">
+      <div className="flex justify-center alert alert-info">
         <span>
           Program account not found. Make sure you have deployed the program and
           are on the correct cluster.
@@ -45,7 +78,7 @@ export function JournalList() {
       {accounts.isLoading ? (
         <span className="loading loading-spinner loading-lg"></span>
       ) : accounts.data?.length ? (
-        <div className="grid md:grid-cols-2 gap-4">
+        <div className="grid gap-4 md:grid-cols-2">
           {accounts.data?.map((account) => (
             <JournalCard
               key={account.publicKey.toString()}
@@ -69,6 +102,21 @@ function JournalCard({ account }: { account: PublicKey }) {
     updateEntry, 
     deleteEntry
   } = useJournalProgramAccount({ account });
+  const { publicKey } = useWallet();
+  const [message, setMessage] = useState('');
+  const title = accountQuery.data?.title; 
+
+  const isFormValid = message.trim() !== '';
+
+  const handleSubmit = () => {
+    if (publicKey && isFormValid && title) {
+      updateEntry.mutateAsync({ title, message, owner: publicKey });
+    }
+  };
+
+  if (!publicKey){
+    return <p>Connect your wallet</p>
+  }
 
   return accountQuery.isLoading ? (
     <span className="loading loading-spinner loading-lg"></span>
@@ -80,36 +128,25 @@ function JournalCard({ account }: { account: PublicKey }) {
             className="card-title justify-center text-3xl cursor-pointer"
             onClick={() => accountQuery.refetch()}
           >
-            {title}
+            {accountQuery.data?.title}
           </h2>
+          <p> 
+          {accountQuery.data?.message}
+          </p>
           <div className="card-actions justify-around">
+            <textarea
+              placeholder="Update message here"
+              value={message}
+              onChange={(e) => setMessage(e.target.value)}
+              className="textarea textarea-bordered w-full max-w-xs"
+            />
             <button
-              className="btn btn-xs lg:btn-md btn-outline"
-              onClick={() => updateEntry.mutateAsync()}
-              disabled={updateEntry.isPending}
+              className="btn btn-xs lg:btn-md btn-primary"
+              onClick={handleSubmit}
+              disabled={updateEntry.isPending || !isFormValid}
             >
-              Update Journal Entry
+              Update Journal Entry {updateEntry.isPending && '...'}
             </button>
-            {/* <button
-              className="btn btn-xs lg:btn-md btn-outline"
-              onClick={() => {
-                const title = window.prompt(
-                  'Set title to:',
-                  title.toString() ?? '0'
-                );
-                return setMutation.mutateAsync(parseInt(value));
-              }}
-              disabled={setMutation.isPending}
-            >
-              Set
-            </button>
-            <button
-              className="btn btn-xs lg:btn-md btn-outline"
-              onClick={() => decrementMutation.mutateAsync()}
-              disabled={decrementMutation.isPending}
-            >
-              Decrement
-            </button> */}
           </div>
           <div className="text-center space-y-4">
             <p>
@@ -128,7 +165,10 @@ function JournalCard({ account }: { account: PublicKey }) {
                 ) {
                   return;
                 }
-                return deleteEntry.mutateAsync();
+                const title = accountQuery.data?.title;
+                if (title) {
+                  return deleteEntry.mutateAsync(title);
+                }
               }}
               disabled={deleteEntry.isPending}
             >

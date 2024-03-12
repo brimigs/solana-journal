@@ -1,4 +1,4 @@
-// File: /Users/brimigs/Documents/solana/journal/web/app/layout.tsx
+// File: /Users/brimigs/Documents/solana/solana-journal/web/app/layout.tsx
 import * as entry from '../../../app/layout.js'
 import type { ResolvingMetadata } from 'next/dist/lib/metadata/types/metadata-interface.js'
 
