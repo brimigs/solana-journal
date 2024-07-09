@@ -9,7 +9,7 @@ This project is generated with the [create-solana-dapp](https://github.com/solan
 - Node v18.18.0 or higher
 
 - Rust v1.70.0 or higher
-- Anchor CLI 0.29.0 or higher
+- Anchor CLI 0.29.0 (Use this version to avoid idl conflicts)
 - Solana CLI 1.17.0 or higher
 
 ### Installation
@@ -56,25 +56,30 @@ npm run anchor keys sync
 #### Build the program:
 
 ```shell
-npm run anchor-build
+npm run anchor build
 ```
 
-#### Start the test validator with the program deployed:
+#### Start the test validator for deployment on localnet
 
 ```shell
-npm run anchor-localnet
+npm run anchor localnet
 ```
 
-#### Run the tests
-
+#### Run the tests 
+stop the validator first,then run
 ```shell
-npm run anchor-test
+npm run anchor test
 ```
 
 #### Deploy to Devnet
 
 ```shell
 npm run anchor deploy --provider.cluster devnet
+```
+#### Deploy to localnet
+
+```shell
+npm run anchor deploy --provider.cluster localnet
 ```
 
 ### web
