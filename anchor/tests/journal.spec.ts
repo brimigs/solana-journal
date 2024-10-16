@@ -2,99 +2,77 @@ import * as anchor from '@coral-xyz/anchor';
 import { Program } from '@coral-xyz/anchor';
 import { Keypair } from '@solana/web3.js';
 import { Journal } from '../target/types/journal';
-
 describe('journal', () => {
   // Configure the client to use the local cluster.
   const provider = anchor.AnchorProvider.env();
   anchor.setProvider(provider);
   const payer = provider.wallet as anchor.Wallet;
-
+  const owner = provider.wallet.publicKey;
   const program = anchor.workspace.Journal as Program<Journal>;
 
   const journalKeypair = Keypair.generate();
 
-  it('Initialize Journal', async () => {
-    await program.methods
-      .initialize()
+  it("Creates a journal entry", async () => {
+    const title = "Test Title";
+    const message = "Test Message";
+
+    const [journalEntryPda] = anchor.web3.PublicKey.findProgramAddressSync(
+      [Buffer.from(title), provider.wallet.publicKey.toBuffer()],
+      program.programId
+    );
+
+    const tx = await program.methods
+      .createJournalEntry(title, message)
       .accounts({
-        journal: journalKeypair.publicKey,
-        payer: payer.publicKey,
-      })
-      .signers([journalKeypair])
-      .rpc();
-
-    const currentCount = await program.account.journal.fetch(
-      journalKeypair.publicKey
-    );
-
-    expect(currentCount.count).toEqual(0);
-  });
-
-  it('Increment Journal', async () => {
-    await program.methods
-      .increment()
-      .accounts({ journal: journalKeypair.publicKey })
-      .rpc();
-
-    const currentCount = await program.account.journal.fetch(
-      journalKeypair.publicKey
-    );
-
-    expect(currentCount.count).toEqual(1);
-  });
-
-  it('Increment Journal Again', async () => {
-    await program.methods
-      .increment()
-      .accounts({ journal: journalKeypair.publicKey })
-      .rpc();
-
-    const currentCount = await program.account.journal.fetch(
-      journalKeypair.publicKey
-    );
-
-    expect(currentCount.count).toEqual(2);
-  });
-
-  it('Decrement Journal', async () => {
-    await program.methods
-      .decrement()
-      .accounts({ journal: journalKeypair.publicKey })
-      .rpc();
-
-    const currentCount = await program.account.journal.fetch(
-      journalKeypair.publicKey
-    );
-
-    expect(currentCount.count).toEqual(1);
-  });
-
-  it('Set journal value', async () => {
-    await program.methods
-      .set(42)
-      .accounts({ journal: journalKeypair.publicKey })
-      .rpc();
-
-    const currentCount = await program.account.journal.fetch(
-      journalKeypair.publicKey
-    );
-
-    expect(currentCount.count).toEqual(42);
-  });
-
-  it('Set close the journal account', async () => {
-    await program.methods
-      .close()
-      .accounts({
-        payer: payer.publicKey,
-        journal: journalKeypair.publicKey,
+        journalEntry: journalEntryPda,
+        owner: provider.wallet.publicKey,
+        systemProgram: anchor.web3.SystemProgram.programId,
       })
       .rpc();
 
-    // The account should no longer exist, returning null.
-    const userAccount = await program.account.journal.fetchNullable(
-      journalKeypair.publicKey
+    // Fetch the created account
+    const journalEntry = await program.account.journalEntryState.fetch(journalEntryPda);
+
+    expect(journalEntry.owner.toString()).toStrictEqual(provider.wallet.publicKey.toString());
+    expect(journalEntry.title).toStrictEqual(title);
+    expect(journalEntry.message).toStrictEqual(message);
+
+
+
+  });
+  it("Updates a journal entry", async () => {
+    const title = "Update Test";
+    const originalMessage = "Original Message";
+    const updatedMessage = "Updated Message";
+
+    const [journalEntryPda] = anchor.web3.PublicKey.findProgramAddressSync(
+      [Buffer.from(title), owner.toBuffer()],
+      program.programId
     );
-    expect(userAccount).toBeNull();
+
+    // First, create the entry
+    await program.methods
+      .createJournalEntry(title, originalMessage)
+      .accounts({
+        journalEntry: journalEntryPda,
+        owner: owner,
+        systemProgram: anchor.web3.SystemProgram.programId,
+      })
+      .rpc();
+
+    // Now, update it
+    await program.methods
+      .updateJournalEntry(title, updatedMessage)
+      .accounts({
+        journalEntry: journalEntryPda,
+        owner: owner,
+        systemProgram: anchor.web3.SystemProgram.programId,
+      })
+      .rpc();
+
+    // Fetch the updated account
+    const journalEntry = await program.account.journalEntryState.fetch(journalEntryPda);
+
+    expect(journalEntry.message).toStrictEqual(updatedMessage);
   });
 });
